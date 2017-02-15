@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2CEC4BD1E54E092002A79BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEC4BC1E54E092002A79BB /* AppDelegate.swift */; };
+		D2CEC4BF1E54E092002A79BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEC4BE1E54E092002A79BB /* ViewController.swift */; };
+		D2CEC4C21E54E092002A79BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CEC4C01E54E092002A79BB /* Main.storyboard */; };
+		D2CEC4C41E54E092002A79BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CEC4C31E54E092002A79BB /* Assets.xcassets */; };
+		D2CEC4C71E54E092002A79BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CEC4C51E54E092002A79BB /* LaunchScreen.storyboard */; };
+		D2CEC4D21E54E092002A79BB /* towersOfHanoiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEC4D11E54E092002A79BB /* towersOfHanoiTests.swift */; };
+		D2CEC4DD1E54E092002A79BB /* towersOfHanoiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEC4DC1E54E092002A79BB /* towersOfHanoiUITests.swift */; };
+		D2CEC4ED1E54E1FF002A79BB /* DonutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEC4EC1E54E1FF002A79BB /* DonutView.swift */; };
+		D2CEC4EF1E54E614002A79BB /* CircleMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEC4EE1E54E614002A79BB /* CircleMaker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2CEC4CE1E54E092002A79BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2CEC4B11E54E092002A79BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2CEC4B81E54E092002A79BB;
+			remoteInfo = towersOfHanoi;
+		};
+		D2CEC4D91E54E092002A79BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2CEC4B11E54E092002A79BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2CEC4B81E54E092002A79BB;
+			remoteInfo = towersOfHanoi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D2CEC4B91E54E092002A79BB /* towersOfHanoi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = towersOfHanoi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CEC4BC1E54E092002A79BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2CEC4BE1E54E092002A79BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2CEC4C11E54E092002A79BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2CEC4C31E54E092002A79BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2CEC4C61E54E092002A79BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2CEC4C81E54E092002A79BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2CEC4CD1E54E092002A79BB /* towersOfHanoiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = towersOfHanoiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CEC4D11E54E092002A79BB /* towersOfHanoiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = towersOfHanoiTests.swift; sourceTree = "<group>"; };
+		D2CEC4D31E54E092002A79BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2CEC4D81E54E092002A79BB /* towersOfHanoiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = towersOfHanoiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CEC4DC1E54E092002A79BB /* towersOfHanoiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = towersOfHanoiUITests.swift; sourceTree = "<group>"; };
+		D2CEC4DE1E54E092002A79BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2CEC4EC1E54E1FF002A79BB /* DonutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonutView.swift; sourceTree = "<group>"; };
+		D2CEC4EE1E54E614002A79BB /* CircleMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMaker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2CEC4B61E54E092002A79BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CEC4CA1E54E092002A79BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CEC4D51E54E092002A79BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2CEC4B01E54E092002A79BB = {
+			isa = PBXGroup;
+			children = (
+				D2CEC4BB1E54E092002A79BB /* towersOfHanoi */,
+				D2CEC4D01E54E092002A79BB /* towersOfHanoiTests */,
+				D2CEC4DB1E54E092002A79BB /* towersOfHanoiUITests */,
+				D2CEC4BA1E54E092002A79BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2CEC4BA1E54E092002A79BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2CEC4B91E54E092002A79BB /* towersOfHanoi.app */,
+				D2CEC4CD1E54E092002A79BB /* towersOfHanoiTests.xctest */,
+				D2CEC4D81E54E092002A79BB /* towersOfHanoiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2CEC4BB1E54E092002A79BB /* towersOfHanoi */ = {
+			isa = PBXGroup;
+			children = (
+				D2CEC4BC1E54E092002A79BB /* AppDelegate.swift */,
+				D2CEC4BE1E54E092002A79BB /* ViewController.swift */,
+				D2CEC4C01E54E092002A79BB /* Main.storyboard */,
+				D2CEC4C31E54E092002A79BB /* Assets.xcassets */,
+				D2CEC4C51E54E092002A79BB /* LaunchScreen.storyboard */,
+				D2CEC4C81E54E092002A79BB /* Info.plist */,
+				D2CEC4EC1E54E1FF002A79BB /* DonutView.swift */,
+				D2CEC4EE1E54E614002A79BB /* CircleMaker.swift */,
+			);
+			path = towersOfHanoi;
+			sourceTree = "<group>";
+		};
+		D2CEC4D01E54E092002A79BB /* towersOfHanoiTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2CEC4D11E54E092002A79BB /* towersOfHanoiTests.swift */,
+				D2CEC4D31E54E092002A79BB /* Info.plist */,
+			);
+			path = towersOfHanoiTests;
+			sourceTree = "<group>";
+		};
+		D2CEC4DB1E54E092002A79BB /* towersOfHanoiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D2CEC4DC1E54E092002A79BB /* towersOfHanoiUITests.swift */,
+				D2CEC4DE1E54E092002A79BB /* Info.plist */,
+			);
+			path = towersOfHanoiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2CEC4B81E54E092002A79BB /* towersOfHanoi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2CEC4E11E54E092002A79BB /* Build configuration list for PBXNativeTarget "towersOfHanoi" */;
+			buildPhases = (
+				D2CEC4B51E54E092002A79BB /* Sources */,
+				D2CEC4B61E54E092002A79BB /* Frameworks */,
+				D2CEC4B71E54E092002A79BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = towersOfHanoi;
+			productName = towersOfHanoi;
+			productReference = D2CEC4B91E54E092002A79BB /* towersOfHanoi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2CEC4CC1E54E092002A79BB /* towersOfHanoiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2CEC4E41E54E092002A79BB /* Build configuration list for PBXNativeTarget "towersOfHanoiTests" */;
+			buildPhases = (
+				D2CEC4C91E54E092002A79BB /* Sources */,
+				D2CEC4CA1E54E092002A79BB /* Frameworks */,
+				D2CEC4CB1E54E092002A79BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2CEC4CF1E54E092002A79BB /* PBXTargetDependency */,
+			);
+			name = towersOfHanoiTests;
+			productName = towersOfHanoiTests;
+			productReference = D2CEC4CD1E54E092002A79BB /* towersOfHanoiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2CEC4D71E54E092002A79BB /* towersOfHanoiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2CEC4E71E54E092002A79BB /* Build configuration list for PBXNativeTarget "towersOfHanoiUITests" */;
+			buildPhases = (
+				D2CEC4D41E54E092002A79BB /* Sources */,
+				D2CEC4D51E54E092002A79BB /* Frameworks */,
+				D2CEC4D61E54E092002A79BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2CEC4DA1E54E092002A79BB /* PBXTargetDependency */,
+			);
+			name = towersOfHanoiUITests;
+			productName = towersOfHanoiUITests;
+			productReference = D2CEC4D81E54E092002A79BB /* towersOfHanoiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2CEC4B11E54E092002A79BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jon Thornburg";
+				TargetAttributes = {
+					D2CEC4B81E54E092002A79BB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5XL94NV2G5;
+						ProvisioningStyle = Automatic;
+					};
+					D2CEC4CC1E54E092002A79BB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5XL94NV2G5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D2CEC4B81E54E092002A79BB;
+					};
+					D2CEC4D71E54E092002A79BB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5XL94NV2G5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D2CEC4B81E54E092002A79BB;
+					};
+				};
+			};
+			buildConfigurationList = D2CEC4B41E54E092002A79BB /* Build configuration list for PBXProject "towersOfHanoi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2CEC4B01E54E092002A79BB;
+			productRefGroup = D2CEC4BA1E54E092002A79BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2CEC4B81E54E092002A79BB /* towersOfHanoi */,
+				D2CEC4CC1E54E092002A79BB /* towersOfHanoiTests */,
+				D2CEC4D71E54E092002A79BB /* towersOfHanoiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2CEC4B71E54E092002A79BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CEC4C71E54E092002A79BB /* LaunchScreen.storyboard in Resources */,
+				D2CEC4C41E54E092002A79BB /* Assets.xcassets in Resources */,
+				D2CEC4C21E54E092002A79BB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CEC4CB1E54E092002A79BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CEC4D61E54E092002A79BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2CEC4B51E54E092002A79BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CEC4BF1E54E092002A79BB /* ViewController.swift in Sources */,
+				D2CEC4BD1E54E092002A79BB /* AppDelegate.swift in Sources */,
+				D2CEC4EF1E54E614002A79BB /* CircleMaker.swift in Sources */,
+				D2CEC4ED1E54E1FF002A79BB /* DonutView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CEC4C91E54E092002A79BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CEC4D21E54E092002A79BB /* towersOfHanoiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2CEC4D41E54E092002A79BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2CEC4DD1E54E092002A79BB /* towersOfHanoiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2CEC4CF1E54E092002A79BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2CEC4B81E54E092002A79BB /* towersOfHanoi */;
+			targetProxy = D2CEC4CE1E54E092002A79BB /* PBXContainerItemProxy */;
+		};
+		D2CEC4DA1E54E092002A79BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2CEC4B81E54E092002A79BB /* towersOfHanoi */;
+			targetProxy = D2CEC4D91E54E092002A79BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2CEC4C01E54E092002A79BB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2CEC4C11E54E092002A79BB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D2CEC4C51E54E092002A79BB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2CEC4C61E54E092002A79BB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2CEC4DF1E54E092002A79BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2CEC4E01E54E092002A79BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2CEC4E21E54E092002A79BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5XL94NV2G5;
+				INFOPLIST_FILE = towersOfHanoi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clickHereLabs.towersOfHanoi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D2CEC4E31E54E092002A79BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5XL94NV2G5;
+				INFOPLIST_FILE = towersOfHanoi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clickHereLabs.towersOfHanoi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D2CEC4E51E54E092002A79BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5XL94NV2G5;
+				INFOPLIST_FILE = towersOfHanoiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clickHereLabs.towersOfHanoiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/towersOfHanoi.app/towersOfHanoi";
+			};
+			name = Debug;
+		};
+		D2CEC4E61E54E092002A79BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5XL94NV2G5;
+				INFOPLIST_FILE = towersOfHanoiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clickHereLabs.towersOfHanoiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/towersOfHanoi.app/towersOfHanoi";
+			};
+			name = Release;
+		};
+		D2CEC4E81E54E092002A79BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5XL94NV2G5;
+				INFOPLIST_FILE = towersOfHanoiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clickHereLabs.towersOfHanoiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = towersOfHanoi;
+			};
+			name = Debug;
+		};
+		D2CEC4E91E54E092002A79BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5XL94NV2G5;
+				INFOPLIST_FILE = towersOfHanoiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = clickHereLabs.towersOfHanoiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = towersOfHanoi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2CEC4B41E54E092002A79BB /* Build configuration list for PBXProject "towersOfHanoi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CEC4DF1E54E092002A79BB /* Debug */,
+				D2CEC4E01E54E092002A79BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2CEC4E11E54E092002A79BB /* Build configuration list for PBXNativeTarget "towersOfHanoi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CEC4E21E54E092002A79BB /* Debug */,
+				D2CEC4E31E54E092002A79BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D2CEC4E41E54E092002A79BB /* Build configuration list for PBXNativeTarget "towersOfHanoiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CEC4E51E54E092002A79BB /* Debug */,
+				D2CEC4E61E54E092002A79BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D2CEC4E71E54E092002A79BB /* Build configuration list for PBXNativeTarget "towersOfHanoiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2CEC4E81E54E092002A79BB /* Debug */,
+				D2CEC4E91E54E092002A79BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2CEC4B11E54E092002A79BB /* Project object */;
+}
