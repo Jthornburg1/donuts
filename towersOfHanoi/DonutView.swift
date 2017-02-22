@@ -9,10 +9,14 @@
 import Foundation
 import UIKit
 
-class DonutView: UIView {
+class DonutView: UIView, UIGestureRecognizerDelegate {
     
     var lastLocation = CGPoint(x: 0.0, y: 0.0)
     var hole = UIView()
+    var count: Int?
+    var blueValue: CGFloat?
+    var greenValue: CGFloat?
+    var redValue: CGFloat?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,9 +25,9 @@ class DonutView: UIView {
         
         self.gestureRecognizers = [panRecognizer]
         
-        let blueValue = CGFloat(Int(arc4random() % 255)) / 255.0
-        let greenValue = CGFloat(Int(arc4random() % 255)) / 255.0
-        let redValue = CGFloat(Int(arc4random() % 255)) / 255.0
+        blueValue = CGFloat(Int(arc4random() % 255)) / 255.0
+        greenValue = CGFloat(Int(arc4random() % 255)) / 255.0
+        redValue = CGFloat(Int(arc4random() % 255)) / 255.0
         
         hole = UIView(frame: CGRect(x: (self.frame.width / 2) - 10, y: (self.frame.height / 2) - 10, width: 20.0, height: 20.0))
         hole.backgroundColor = UIColor.white
@@ -31,7 +35,11 @@ class DonutView: UIView {
         hole.clipsToBounds = true
         self.addSubview(hole)
         
-        self.backgroundColor = UIColor(displayP3Red: redValue, green: greenValue, blue: blueValue, alpha: 1.0)
+        if let red = redValue, let green = greenValue, let blue = blueValue {
+            self.backgroundColor = UIColor(displayP3Red: red, green: green, blue: blue, alpha: 1.0)
+        }
+        
+        
         self.layer.cornerRadius = self.frame.height / 2
         self.clipsToBounds = true
     }
