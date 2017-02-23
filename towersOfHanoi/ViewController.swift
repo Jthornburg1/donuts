@@ -19,6 +19,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var donuts: [DonutView]?
     var orderSize = 0
     var doughnut: DonutView?
+    var donutCreated = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,16 +35,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        if let num = Int(textField.text!) {
-            orderSize = num
-            makeTheDonuts()
-            textField.text = ""
-        }
-        return true
     }
     
     func makeTheDonuts() {
@@ -67,28 +58,50 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    @IBAction func confirmTapped(_ sender: Any) {
+        textF.resignFirstResponder()
+        if let num = Int(textF.text!) {
+            orderSize = num
+            makeTheDonuts()
+            textF.text = ""
+        }
+    }
     func pushDetail(sender: UITapGestureRecognizer) {
         let donut = sender.view
+        var i = 1
         for dont in donuts! {
-            if dont.tag == donut!.tag {
-                let rect = CGRect(x: (donutBox.frame.width / 2) - 60, y: (donutBox.frame.height / 2) - 60, width: 120, height: 120)
-                doughnut = DonutView(frame: rect)
-                doughnut!.redValue = dont.redValue!
-                doughnut!.blueValue = dont.blueValue!
-                doughnut!.greenValue = dont.greenValue!
-                colorLabel.text = "Red: \(dont.redValue!), Green: \(dont.greenValue!), Blue: \(dont.blueValue!) !!!"
-                animateConstraint(constraint: leading, ending: 34.0)
-                animateConstraint(constraint: trailing, ending: 34.0)
+            if !donutCreated {
+                if dont.tag == donut!.tag {
+                    let rect = CGRect(x: (donutBox.frame.width / 2) + 77, y: (donutBox.frame.height / 2) - 60, width: 120, height: 120)
+                    doughnut = DonutView(frame: rect)
+                    doughnut!.redValue = dont.redValue!
+                    doughnut!.blueValue = dont.blueValue!
+                    doughnut!.greenValue = dont.greenValue!
+                    doughnut!.setColor(color: UIColor(displayP3Red: doughnut!.redValue!, green: doughnut!.greenValue!, blue: doughnut!.blueValue!, alpha: 1.0))
+                    donutBox.addSubview(doughnut!)
+                    colorLabel.text = "Red: \(Int(dont.redValue! * 255)), Green: \(Int(dont.greenValue! * 255)), Blue: \(Int(dont.blueValue! * 255)) !!!"
+                    self.view.bringSubview(toFront: donutBox)
+                    self.view.bringSubview(toFront: doughnut!)
+                    animateConstraint(constraint: leading, ending: 34.0)
+                    animateConstraint(constraint: trailing, ending: 34.0)
+                    donutCreated = true
+                    print("Making \(donut?.tag) donuts!")
+                    i += 1
+                }
+
             }
         }
     }
     @IBAction func dismissView(_ sender: Any) {
         animateConstraint(constraint: leading, ending: 434.0)
         animateConstraint(constraint: trailing, ending: 366.0)
+        doughnut!.removeFromSuperview()
+        doughnut = nil
+        donutCreated = false
     }
     
     func animateConstraint(constraint: NSLayoutConstraint, ending: CGFloat) {
-        UIView.animate(withDuration: 0.5, delay: 0.0, usingSpringWithDamping: 0.2, initialSpringVelocity: 10.0, options: .curveEaseInOut, animations: {
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: .curveEaseInOut, animations: {
             constraint.constant = ending
             self.view.layoutIfNeeded()
         }, completion: nil)

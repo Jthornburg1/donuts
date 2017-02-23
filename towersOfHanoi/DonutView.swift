@@ -29,7 +29,7 @@ class DonutView: UIView, UIGestureRecognizerDelegate {
         greenValue = CGFloat(Int(arc4random() % 255)) / 255.0
         redValue = CGFloat(Int(arc4random() % 255)) / 255.0
         
-        hole = UIView(frame: CGRect(x: (self.frame.width / 2) - 10, y: (self.frame.height / 2) - 10, width: 20.0, height: 20.0))
+        hole = UIView(frame: CGRect(x: (self.frame.width / 2) - 10, y: (self.frame.height / 2) - 10, width: self.frame.width / 5, height: self.frame.width / 5))
         hole.backgroundColor = UIColor.white
         hole.layer.cornerRadius = 10
         hole.clipsToBounds = true
@@ -59,5 +59,9 @@ class DonutView: UIView, UIGestureRecognizerDelegate {
         
         // remember original location
         lastLocation = self.center
+    }
+    
+    public func setColor(color: UIColor) {
+        self.backgroundColor = color
     }
 }

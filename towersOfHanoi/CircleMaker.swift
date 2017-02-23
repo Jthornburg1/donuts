@@ -23,7 +23,7 @@ struct CircleMaker {
     
     func fillOrder() -> [DonutView] {
         var order = [DonutView]()
-        for n in 0...numberOrdered {
+        for n in 0...numberOrdered - 1 {
             let newD = create1()
             order.append(newD)
         }

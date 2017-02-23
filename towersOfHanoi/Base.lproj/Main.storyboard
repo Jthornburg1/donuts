@@ -22,25 +22,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many donuts would you like?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8Y-8C-SqW">
-                                <rect key="frame" x="57" y="72" width="261" height="54"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="3s7-ag-XXz"/>
-                                    <constraint firstAttribute="width" constant="261" id="byi-aB-W3w"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="number here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W4J-bB-AoK">
-                                <rect key="frame" x="139" y="146" width="97" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="A5b-hg-nrO"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                            </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfy-A2-Qb7">
                                 <rect key="frame" x="50" y="184" width="275" height="251"/>
                                 <subviews>
@@ -64,14 +45,47 @@
                                     <constraint firstAttribute="height" constant="251" id="jIq-G1-4T8"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many donuts would you like?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8Y-8C-SqW">
+                                <rect key="frame" x="57" y="72" width="261" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="3s7-ag-XXz"/>
+                                    <constraint firstAttribute="width" constant="261" id="byi-aB-W3w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="number here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W4J-bB-AoK">
+                                <rect key="frame" x="139" y="146" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="A5b-hg-nrO"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQ1-wv-Jzg">
+                                <rect key="frame" x="240" y="145" width="55" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6vW-o5-JxT"/>
+                                    <constraint firstAttribute="width" constant="55" id="xDZ-Xx-Ggu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <action selector="confirmTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lUT-fq-Fxu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="t8Y-8C-SqW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="0qm-ET-A9Q"/>
                             <constraint firstItem="lfy-A2-Qb7" firstAttribute="top" secondItem="W4J-bB-AoK" secondAttribute="bottom" constant="8" id="91u-SL-IIa"/>
+                            <constraint firstItem="cQ1-wv-Jzg" firstAttribute="top" secondItem="t8Y-8C-SqW" secondAttribute="bottom" constant="19" id="BBN-rH-5nx"/>
                             <constraint firstItem="lfy-A2-Qb7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="QpJ-bb-l2P"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lfy-A2-Qb7" secondAttribute="trailing" constant="34" id="XKI-D4-eEU"/>
                             <constraint firstItem="W4J-bB-AoK" firstAttribute="top" secondItem="t8Y-8C-SqW" secondAttribute="bottom" constant="20" id="cYU-77-KXr"/>
+                            <constraint firstItem="cQ1-wv-Jzg" firstAttribute="leading" secondItem="W4J-bB-AoK" secondAttribute="trailing" constant="4" id="hVP-4Z-kUS"/>
                             <constraint firstItem="t8Y-8C-SqW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jvu-C2-AdY"/>
                             <constraint firstItem="W4J-bB-AoK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rXa-St-ukq"/>
                         </constraints>
