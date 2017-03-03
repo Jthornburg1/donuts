@@ -72,7 +72,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         for dont in donuts! {
             if !donutCreated {
                 if dont.tag == donut!.tag {
-                    let rect = CGRect(x: (donutBox.frame.width / 2) + 77, y: (donutBox.frame.height / 2) - 60, width: 120, height: 120)
+                    let rect = CGRect(x: (donutBox.frame.width / 2) + 50, y: (donutBox.frame.height / 2) - 85, width: 170, height: 170)
                     doughnut = DonutView(frame: rect)
                     doughnut!.redValue = dont.redValue!
                     doughnut!.blueValue = dont.blueValue!

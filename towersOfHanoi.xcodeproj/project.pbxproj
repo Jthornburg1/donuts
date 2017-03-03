@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2C9C2311E689F5B008B3D52 /* PanTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C9C2301E689F5B008B3D52 /* PanTester.swift */; };
 		D2CEC4BD1E54E092002A79BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEC4BC1E54E092002A79BB /* AppDelegate.swift */; };
 		D2CEC4BF1E54E092002A79BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEC4BE1E54E092002A79BB /* ViewController.swift */; };
 		D2CEC4C21E54E092002A79BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CEC4C01E54E092002A79BB /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2C9C2301E689F5B008B3D52 /* PanTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanTester.swift; sourceTree = "<group>"; };
 		D2CEC4B91E54E092002A79BB /* towersOfHanoi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = towersOfHanoi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CEC4BC1E54E092002A79BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2CEC4BE1E54E092002A79BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				D2CEC4C81E54E092002A79BB /* Info.plist */,
 				D2CEC4EC1E54E1FF002A79BB /* DonutView.swift */,
 				D2CEC4EE1E54E614002A79BB /* CircleMaker.swift */,
+				D2C9C2301E689F5B008B3D52 /* PanTester.swift */,
 			);
 			path = towersOfHanoi;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				D2CEC4BF1E54E092002A79BB /* ViewController.swift in Sources */,
 				D2CEC4BD1E54E092002A79BB /* AppDelegate.swift in Sources */,
 				D2CEC4EF1E54E614002A79BB /* CircleMaker.swift in Sources */,
+				D2C9C2311E689F5B008B3D52 /* PanTester.swift in Sources */,
 				D2CEC4ED1E54E1FF002A79BB /* DonutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +524,7 @@
 				D2CEC4E31E54E092002A79BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2CEC4E41E54E092002A79BB /* Build configuration list for PBXNativeTarget "towersOfHanoiTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +533,7 @@
 				D2CEC4E61E54E092002A79BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2CEC4E71E54E092002A79BB /* Build configuration list for PBXNativeTarget "towersOfHanoiUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +542,7 @@
 				D2CEC4E91E54E092002A79BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -31,7 +31,7 @@ class DonutView: UIView, UIGestureRecognizerDelegate {
         
         hole = UIView(frame: CGRect(x: (self.frame.width / 2) - 10, y: (self.frame.height / 2) - 10, width: self.frame.width / 5, height: self.frame.width / 5))
         hole.backgroundColor = UIColor.white
-        hole.layer.cornerRadius = 10
+        hole.layer.cornerRadius = hole.frame.width / 2
         hole.clipsToBounds = true
         self.addSubview(hole)
         
@@ -50,6 +50,7 @@ class DonutView: UIView, UIGestureRecognizerDelegate {
     
     func detectPan(recognizer: UIPanGestureRecognizer) {
         let translation = recognizer.translation(in: self.superview!)
+        print("\(translation.x) \(translation.y)")
         self.center = CGPoint(x: lastLocation.x + translation.x, y: lastLocation.y + translation.y)
     }
     
