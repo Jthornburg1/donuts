@@ -15,8 +15,8 @@ struct CircleMaker {
     
     func create1() -> DonutView {
         
-        let x = CGFloat(Int(arc4random() % 320))
-        let y = CGFloat(Int(arc4random() % 600))
+        let x = CGFloat(Int(arc4random() % UInt32(UIScreen.main.bounds.width)))
+        let y = CGFloat(Int(arc4random() % UInt32(UIScreen.main.bounds.height)))
         let donut = DonutView(frame: CGRect(x: x, y: y, width: 60, height: 60))
         return donut
     }

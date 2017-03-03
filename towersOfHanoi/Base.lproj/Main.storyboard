@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -96,11 +97,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HeK-nB-8eS">
-                        <barButtonItem key="leftBarButtonItem" title="new view" id="INv-rR-fh6">
-                            <connections>
-                                <segue destination="Ca6-oB-D31" kind="show" id="RDp-GF-a3o"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem title="new view" id="INv-rR-fh6">
+                                <connections>
+                                    <segue destination="Ca6-oB-D31" kind="show" id="RDp-GF-a3o"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="actual game" id="1z7-gk-EHe">
+                                <connections>
+                                    <segue destination="xUk-YH-8LA" kind="popoverPresentation" popoverAnchorBarButtonItem="1z7-gk-EHe" id="zuZ-0A-kSL">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="meU-Gf-Epl">
                             <connections>
                                 <action selector="removeDonuts:" destination="BYZ-38-t0r" id="Nhh-av-S6o"/>
@@ -118,6 +128,106 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1079.2" y="138.98050974512745"/>
+        </scene>
+        <!--Actual Game View Controller-->
+        <scene sceneID="P3U-CM-8Ex">
+            <objects>
+                <viewController id="xUk-YH-8LA" customClass="ActualGameViewController" customModule="towersOfHanoi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eXE-tG-JCf"/>
+                        <viewControllerLayoutGuide type="bottom" id="hRh-Ak-7M6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nwT-uH-WDn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vBt-pZ-pbR" customClass="HanoiPin" customModule="towersOfHanoi" customModuleProvider="target">
+                                <rect key="frame" x="103" y="249" width="170" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="1lI-lE-uxE"/>
+                                    <constraint firstAttribute="width" constant="170" id="3R2-mb-clj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlN-aa-ekR" customClass="HanoiPin" customModule="towersOfHanoi" customModuleProvider="target">
+                                <rect key="frame" x="102" y="457" width="170" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="5bn-AD-2Id"/>
+                                    <constraint firstAttribute="height" constant="170" id="F3m-e5-ixS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vM4-Xi-jmM">
+                                <rect key="frame" x="273" y="61" width="78" height="128"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wdb-QZ-HB7">
+                                        <rect key="frame" x="8" y="20" width="62" height="88"/>
+                                        <color key="backgroundColor" red="1" green="0.71037451679999997" blue="0.12169775250000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.1984402948" green="0.19191655390000001" blue="0.78116987179999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Wdb-QZ-HB7" firstAttribute="top" secondItem="vM4-Xi-jmM" secondAttribute="top" constant="20" id="2Be-H3-0lS"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wdb-QZ-HB7" secondAttribute="trailing" constant="8" id="8fU-IN-WHZ"/>
+                                    <constraint firstAttribute="height" constant="128" id="DYx-ER-TCS"/>
+                                    <constraint firstItem="Wdb-QZ-HB7" firstAttribute="leading" secondItem="vM4-Xi-jmM" secondAttribute="leading" constant="8" id="I80-iq-KJ7"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wdb-QZ-HB7" secondAttribute="bottom" constant="20" id="g4u-Dm-89j"/>
+                                    <constraint firstAttribute="width" constant="78" id="vbr-Pl-TTf"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycd-Ds-llw">
+                                <rect key="frame" x="321" y="28" width="30" height="30"/>
+                                <state key="normal" title="#?"/>
+                                <connections>
+                                    <action selector="chooseNumber:" destination="xUk-YH-8LA" eventType="touchUpInside" id="8Ql-rs-GOL"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOW-8J-RHW" customClass="HanoiPin" customModule="towersOfHanoi" customModuleProvider="target">
+                                <rect key="frame" x="103" y="40" width="170" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="ArN-hy-KrG"/>
+                                    <constraint firstAttribute="height" constant="170" id="Ql3-NR-czK"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RF-eM-lFa">
+                                <rect key="frame" x="21" y="20" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="didTapDismiss:" destination="xUk-YH-8LA" eventType="touchUpInside" id="Rgg-i4-uNK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vM4-Xi-jmM" firstAttribute="top" secondItem="Ycd-Ds-llw" secondAttribute="bottom" constant="3" id="1LX-bt-Sx9"/>
+                            <constraint firstItem="Ycd-Ds-llw" firstAttribute="top" secondItem="eXE-tG-JCf" secondAttribute="bottom" constant="8" id="1St-2x-U8a"/>
+                            <constraint firstItem="vM4-Xi-jmM" firstAttribute="leading" secondItem="kOW-8J-RHW" secondAttribute="trailing" constant="169.5" id="Avn-I9-Xgr"/>
+                            <constraint firstItem="kOW-8J-RHW" firstAttribute="top" secondItem="eXE-tG-JCf" secondAttribute="bottom" constant="20" id="QkM-Vi-Nqy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ycd-Ds-llw" secondAttribute="trailing" constant="8" id="RXn-Iv-MHh"/>
+                            <constraint firstItem="2RF-eM-lFa" firstAttribute="leading" secondItem="nwT-uH-WDn" secondAttribute="leadingMargin" constant="5" id="Rd2-cQ-TFj"/>
+                            <constraint firstItem="vBt-pZ-pbR" firstAttribute="centerX" secondItem="nwT-uH-WDn" secondAttribute="centerX" id="TIH-wS-1nC"/>
+                            <constraint firstItem="2RF-eM-lFa" firstAttribute="top" secondItem="eXE-tG-JCf" secondAttribute="bottom" id="Wr1-lu-lvx"/>
+                            <constraint firstItem="vlN-aa-ekR" firstAttribute="centerX" secondItem="nwT-uH-WDn" secondAttribute="centerX" id="anI-q8-Kqd"/>
+                            <constraint firstItem="hRh-Ak-7M6" firstAttribute="top" secondItem="vlN-aa-ekR" secondAttribute="bottom" constant="40" id="bNe-Sj-osj"/>
+                            <constraint firstItem="kOW-8J-RHW" firstAttribute="centerX" secondItem="nwT-uH-WDn" secondAttribute="centerX" id="diB-tR-zXP"/>
+                            <constraint firstItem="vBt-pZ-pbR" firstAttribute="centerY" secondItem="nwT-uH-WDn" secondAttribute="centerY" id="fLr-dT-PfL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstPin" destination="kOW-8J-RHW" id="oHS-oC-78u"/>
+                        <outlet property="numberSelectorButton" destination="Ycd-Ds-llw" id="oWZ-92-wKq"/>
+                        <outlet property="picker" destination="Wdb-QZ-HB7" id="tKV-Nd-Tv2"/>
+                        <outlet property="pickerConstraint" destination="Avn-I9-Xgr" id="dEl-wI-n27"/>
+                        <outlet property="pickerContainerView" destination="vM4-Xi-jmM" id="QgI-UP-WeB"/>
+                        <outlet property="secondPin" destination="vBt-pZ-pbR" id="cJ1-HC-Sfc"/>
+                        <outlet property="thirdPin" destination="vlN-aa-ekR" id="G8K-X0-1wV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Alf-dB-Rtr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077.5999999999999" y="829.83508245877067"/>
         </scene>
         <!--Pan Tester-->
         <scene sceneID="n5w-Ug-PHw">
