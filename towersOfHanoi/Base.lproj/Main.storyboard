@@ -82,6 +82,14 @@
                                     <action selector="confirmTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lUT-fq-Fxu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5b-pm-bhT">
+                                <rect key="frame" x="286" y="535" width="33" height="30"/>
+                                <state key="normal" title="Loca"/>
+                                <connections>
+                                    <action selector="LocaButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y9x-et-gXu"/>
+                                    <segue destination="xuT-D0-o9S" kind="show" id="ETu-RX-1JH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -91,8 +99,10 @@
                             <constraint firstItem="lfy-A2-Qb7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="QpJ-bb-l2P"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lfy-A2-Qb7" secondAttribute="trailing" constant="34" id="XKI-D4-eEU"/>
                             <constraint firstItem="W4J-bB-AoK" firstAttribute="top" secondItem="t8Y-8C-SqW" secondAttribute="bottom" constant="20" id="cYU-77-KXr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B5b-pm-bhT" secondAttribute="bottom" constant="102" id="cbZ-WW-ZdU"/>
                             <constraint firstItem="cQ1-wv-Jzg" firstAttribute="leading" secondItem="W4J-bB-AoK" secondAttribute="trailing" constant="4" id="hVP-4Z-kUS"/>
                             <constraint firstItem="t8Y-8C-SqW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jvu-C2-AdY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="B5b-pm-bhT" secondAttribute="trailing" constant="40" id="lpf-Vw-nfQ"/>
                             <constraint firstItem="W4J-bB-AoK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rXa-St-ukq"/>
                         </constraints>
                     </view>
@@ -228,6 +238,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Alf-dB-Rtr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="829.83508245877067"/>
+        </scene>
+        <!--LocationerVC-->
+        <scene sceneID="QmK-bE-dXC">
+            <objects>
+                <viewController id="xuT-D0-o9S" customClass="LocationerVC" customModule="towersOfHanoi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f7B-Cg-mUX"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cho-MW-m9o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dqh-BM-aqc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hvQ-8x-WO3">
+                                <rect key="frame" x="44" y="97" width="287" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iV4-TP-LaY">
+                                        <rect key="frame" x="8" y="0.0" width="265" height="48"/>
+                                        <state key="normal" title="Pica country"/>
+                                        <connections>
+                                            <action selector="pickerShowerTapped:" destination="xuT-D0-o9S" eventType="touchUpInside" id="Ma0-pZ-H3g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="iV4-TP-LaY" firstAttribute="top" secondItem="hvQ-8x-WO3" secondAttribute="top" id="8im-4O-dla"/>
+                                    <constraint firstItem="iV4-TP-LaY" firstAttribute="leading" secondItem="hvQ-8x-WO3" secondAttribute="leading" constant="8" id="ILh-kL-MIj"/>
+                                    <constraint firstAttribute="bottom" secondItem="iV4-TP-LaY" secondAttribute="bottom" id="Wh6-je-4Y7"/>
+                                    <constraint firstAttribute="trailing" secondItem="iV4-TP-LaY" secondAttribute="trailing" constant="14" id="mBr-7L-9f7"/>
+                                    <constraint firstAttribute="height" constant="48" id="oJu-Bz-LWY"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlaceName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7US-3m-cs9">
+                                <rect key="frame" x="16" y="438" width="343" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="TLE-6j-zu2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Gv-ti-BLC">
+                                <rect key="frame" x="16" y="147" width="343" height="273"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Gv-ti-BLC" firstAttribute="top" secondItem="iV4-TP-LaY" secondAttribute="bottom" constant="2" id="FSQ-Ij-S6o"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="1Gv-ti-BLC" secondAttribute="leading" id="LB5-R6-eBs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hvQ-8x-WO3" secondAttribute="trailing" constant="28" id="Y9x-2p-hlr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7US-3m-cs9" secondAttribute="trailing" id="Zf6-P1-rHP"/>
+                            <constraint firstItem="7US-3m-cs9" firstAttribute="top" secondItem="1Gv-ti-BLC" secondAttribute="bottom" constant="18" id="asw-Jn-cta"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="7US-3m-cs9" secondAttribute="leading" id="dY1-UO-2vg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Gv-ti-BLC" secondAttribute="trailing" id="fpK-3I-hfO"/>
+                            <constraint firstItem="hvQ-8x-WO3" firstAttribute="top" secondItem="f7B-Cg-mUX" secondAttribute="bottom" constant="33" id="kIk-Kn-Pdc"/>
+                            <constraint firstItem="1Gv-ti-BLC" firstAttribute="leading" secondItem="7US-3m-cs9" secondAttribute="trailing" constant="-343" id="qJz-QC-rDe"/>
+                            <constraint firstItem="hvQ-8x-WO3" firstAttribute="leading" secondItem="dqh-BM-aqc" secondAttribute="leadingMargin" constant="28" id="voA-at-T7w"/>
+                            <constraint firstItem="Cho-MW-m9o" firstAttribute="top" secondItem="7US-3m-cs9" secondAttribute="bottom" constant="200" id="y56-Xl-nIO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="iV4-TP-LaY" id="Fws-FS-Bl5"/>
+                        <outlet property="pickerView" destination="1Gv-ti-BLC" id="m6N-3J-jVx"/>
+                        <outlet property="placeLabel" destination="7US-3m-cs9" id="X4l-xe-1PV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HZn-Ep-q7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="829.83508245877067"/>
         </scene>
         <!--Pan Tester-->
         <scene sceneID="n5w-Ug-PHw">

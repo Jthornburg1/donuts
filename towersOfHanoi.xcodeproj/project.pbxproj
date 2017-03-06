@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2599D6D1E6E11220039A23D /* states.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2599D6C1E6E11220039A23D /* states.plist */; };
+		D2599D6F1E6E122F0039A23D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2599D6E1E6E122F0039A23D /* Country.swift */; };
+		D2599D711E6E181C0039A23D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2599D701E6E181C0039A23D /* State.swift */; };
+		D2599D731E6E279B0039A23D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2599D721E6E279B0039A23D /* City.swift */; };
 		D2B7BE151E69DF60001B2BB4 /* ActualGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B7BE141E69DF60001B2BB4 /* ActualGameViewController.swift */; };
 		D2B7BE171E69E00C001B2BB4 /* HanoiPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B7BE161E69E00C001B2BB4 /* HanoiPin.swift */; };
+		D2BEBAFE1E6DF1940008A8C6 /* LocationerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BEBAFD1E6DF1940008A8C6 /* LocationerVC.swift */; };
 		D2C9C2311E689F5B008B3D52 /* PanTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C9C2301E689F5B008B3D52 /* PanTester.swift */; };
 		D2CEC4BD1E54E092002A79BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEC4BC1E54E092002A79BB /* AppDelegate.swift */; };
 		D2CEC4BF1E54E092002A79BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEC4BE1E54E092002A79BB /* ViewController.swift */; };
@@ -39,8 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2599D6C1E6E11220039A23D /* states.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = states.plist; sourceTree = "<group>"; };
+		D2599D6E1E6E122F0039A23D /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		D2599D701E6E181C0039A23D /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		D2599D721E6E279B0039A23D /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		D2B7BE141E69DF60001B2BB4 /* ActualGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActualGameViewController.swift; sourceTree = "<group>"; };
 		D2B7BE161E69E00C001B2BB4 /* HanoiPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HanoiPin.swift; sourceTree = "<group>"; };
+		D2BEBAFD1E6DF1940008A8C6 /* LocationerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationerVC.swift; sourceTree = "<group>"; };
 		D2C9C2301E689F5B008B3D52 /* PanTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanTester.swift; sourceTree = "<group>"; };
 		D2CEC4B91E54E092002A79BB /* towersOfHanoi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = towersOfHanoi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CEC4BC1E54E092002A79BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +99,9 @@
 			children = (
 				D2CEC4EC1E54E1FF002A79BB /* DonutView.swift */,
 				D2B7BE161E69E00C001B2BB4 /* HanoiPin.swift */,
+				D2599D6E1E6E122F0039A23D /* Country.swift */,
+				D2599D701E6E181C0039A23D /* State.swift */,
+				D2599D721E6E279B0039A23D /* City.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -99,6 +112,7 @@
 				D2CEC4BE1E54E092002A79BB /* ViewController.swift */,
 				D2C9C2301E689F5B008B3D52 /* PanTester.swift */,
 				D2B7BE141E69DF60001B2BB4 /* ActualGameViewController.swift */,
+				D2BEBAFD1E6DF1940008A8C6 /* LocationerVC.swift */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -118,6 +132,7 @@
 				D2CEC4C51E54E092002A79BB /* LaunchScreen.storyboard */,
 				D2CEC4C01E54E092002A79BB /* Main.storyboard */,
 				D2CEC4BC1E54E092002A79BB /* AppDelegate.swift */,
+				D2599D6C1E6E11220039A23D /* states.plist */,
 				D2CEC4C81E54E092002A79BB /* Info.plist */,
 				D2CEC4C31E54E092002A79BB /* Assets.xcassets */,
 			);
@@ -285,6 +300,7 @@
 			files = (
 				D2CEC4C71E54E092002A79BB /* LaunchScreen.storyboard in Resources */,
 				D2CEC4C41E54E092002A79BB /* Assets.xcassets in Resources */,
+				D2599D6D1E6E11220039A23D /* states.plist in Resources */,
 				D2CEC4C21E54E092002A79BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,11 +327,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2CEC4BF1E54E092002A79BB /* ViewController.swift in Sources */,
+				D2599D6F1E6E122F0039A23D /* Country.swift in Sources */,
 				D2CEC4BD1E54E092002A79BB /* AppDelegate.swift in Sources */,
+				D2599D711E6E181C0039A23D /* State.swift in Sources */,
 				D2CEC4EF1E54E614002A79BB /* CircleMaker.swift in Sources */,
 				D2C9C2311E689F5B008B3D52 /* PanTester.swift in Sources */,
 				D2B7BE171E69E00C001B2BB4 /* HanoiPin.swift in Sources */,
+				D2599D731E6E279B0039A23D /* City.swift in Sources */,
 				D2B7BE151E69DF60001B2BB4 /* ActualGameViewController.swift in Sources */,
+				D2BEBAFE1E6DF1940008A8C6 /* LocationerVC.swift in Sources */,
 				D2CEC4ED1E54E1FF002A79BB /* DonutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
