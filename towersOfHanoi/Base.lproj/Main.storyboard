@@ -90,10 +90,18 @@
                                     <segue destination="xuT-D0-o9S" kind="show" id="ETu-RX-1JH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4le-Y1-y1z">
+                                <rect key="frame" x="28" y="617" width="45" height="30"/>
+                                <state key="normal" title="Places"/>
+                                <connections>
+                                    <action selector="goToPlaces:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pq0-GK-jpF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="t8Y-8C-SqW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="0qm-ET-A9Q"/>
+                            <constraint firstItem="4le-Y1-y1z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="5IN-zX-dFD"/>
                             <constraint firstItem="lfy-A2-Qb7" firstAttribute="top" secondItem="W4J-bB-AoK" secondAttribute="bottom" constant="8" id="91u-SL-IIa"/>
                             <constraint firstItem="cQ1-wv-Jzg" firstAttribute="top" secondItem="t8Y-8C-SqW" secondAttribute="bottom" constant="19" id="BBN-rH-5nx"/>
                             <constraint firstItem="lfy-A2-Qb7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="QpJ-bb-l2P"/>
@@ -103,6 +111,7 @@
                             <constraint firstItem="cQ1-wv-Jzg" firstAttribute="leading" secondItem="W4J-bB-AoK" secondAttribute="trailing" constant="4" id="hVP-4Z-kUS"/>
                             <constraint firstItem="t8Y-8C-SqW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jvu-C2-AdY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="B5b-pm-bhT" secondAttribute="trailing" constant="40" id="lpf-Vw-nfQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4le-Y1-y1z" secondAttribute="bottom" constant="20" id="nrB-Cn-pr0"/>
                             <constraint firstItem="W4J-bB-AoK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rXa-St-ukq"/>
                         </constraints>
                     </view>
@@ -133,11 +142,30 @@
                         <outlet property="leading" destination="QpJ-bb-l2P" id="olz-59-h3m"/>
                         <outlet property="textF" destination="W4J-bB-AoK" id="GvT-TX-yof"/>
                         <outlet property="trailing" destination="XKI-D4-eEU" id="45g-e4-Ik4"/>
+                        <segue destination="eE0-bE-glT" kind="show" identifier="placesSegue" id="vJl-jV-SUD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1079.2" y="138.98050974512745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hJN-8o-dct">
+            <objects>
+                <viewController id="eE0-bE-glT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Huv-lT-RHY"/>
+                        <viewControllerLayoutGuide type="bottom" id="JY7-TB-eF9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ghC-Tc-eVI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hoa-rg-slU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147" y="848"/>
         </scene>
         <!--Actual Game View Controller-->
         <scene sceneID="P3U-CM-8Ex">
@@ -431,7 +459,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t9L-re-SiV" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FRW-Qn-kj6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="FRW-Qn-kj6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

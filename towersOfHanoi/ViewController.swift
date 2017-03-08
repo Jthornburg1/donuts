@@ -102,6 +102,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         doughnut = nil
         donutCreated = false
     }
+    @IBAction func goToPlaces(_ sender: Any) {
+        performSegue(withIdentifier: "placesSegue", sender: self)
+    }
     
     func animateConstraint(constraint: NSLayoutConstraint, ending: CGFloat) {
         UIView.animate(withDuration: 1.0, delay: 0.0, options: .curveEaseInOut, animations: {
