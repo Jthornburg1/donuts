@@ -12,7 +12,7 @@ import GoogleMapsCore
 import GooglePlaces
 import GoogleMaps
 
-extension UIViewController: GMSAutocompleteViewControllerDelegate {
+extension PlacesVC: GMSAutocompleteViewControllerDelegate {
     
     public func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
         print("place name: \(place.name)")
@@ -25,6 +25,6 @@ extension UIViewController: GMSAutocompleteViewControllerDelegate {
     }
     
     public func wasCancelled(_ viewController: GMSAutocompleteViewController) {
-        
+        dismiss(animated: true, completion: nil)
     }
 }

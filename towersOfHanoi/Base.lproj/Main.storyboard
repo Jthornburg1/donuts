@@ -149,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="1079.2" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--PlacesVC-->
         <scene sceneID="hJN-8o-dct">
             <objects>
-                <viewController id="eE0-bE-glT" sceneMemberID="viewController">
+                <viewController id="eE0-bE-glT" customClass="PlacesVC" customModule="towersOfHanoi" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Huv-lT-RHY"/>
                         <viewControllerLayoutGuide type="bottom" id="JY7-TB-eF9"/>
@@ -160,12 +160,36 @@
                     <view key="view" contentMode="scaleToFill" id="ghC-Tc-eVI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4t-an-miw">
+                                <rect key="frame" x="53" y="83" width="269" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.34561301480000001" blue="0.0045820879240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="6bp-eN-NQa"/>
+                                    <constraint firstAttribute="width" constant="269" id="lKT-No-svN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Select nearest city">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectAction:" destination="eE0-bE-glT" eventType="touchUpInside" id="fqc-g9-X6m"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b4t-an-miw" firstAttribute="top" secondItem="Huv-lT-RHY" secondAttribute="bottom" constant="19" id="6Rx-2D-gbT"/>
+                            <constraint firstItem="b4t-an-miw" firstAttribute="centerX" secondItem="ghC-Tc-eVI" secondAttribute="centerX" id="7VI-9W-iSh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="selectButton" destination="b4t-an-miw" id="shH-Yn-bj6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hoa-rg-slU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="147" y="848"/>
+            <point key="canvasLocation" x="146.40000000000001" y="846.9265367316342"/>
         </scene>
         <!--Actual Game View Controller-->
         <scene sceneID="P3U-CM-8Ex">
