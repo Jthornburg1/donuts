@@ -17,6 +17,7 @@ class DonutView: UIView, UIGestureRecognizerDelegate {
     var blueValue: CGFloat?
     var greenValue: CGFloat?
     var redValue: CGFloat?
+    var delegate: RePanimator?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -52,6 +53,7 @@ class DonutView: UIView, UIGestureRecognizerDelegate {
         let translation = recognizer.translation(in: self.superview!)
         print("\(translation.x) \(translation.y)")
         self.center = CGPoint(x: lastLocation.x + translation.x, y: lastLocation.y + translation.y)
+        delegate?.performOnPan(donut: self)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

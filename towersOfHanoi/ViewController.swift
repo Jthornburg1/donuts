@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var colorLabel: UILabel!
     @IBOutlet weak var textF: UITextField!
     @IBOutlet weak var donutBox: UIView!
+    @IBOutlet weak var stackViewButton: UIBarButtonItem!
     
     var donuts: [DonutView]?
     var orderSize = 0
@@ -61,6 +62,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    @IBAction func segueToStackViewVC(_ sender: Any) {
+        performSegue(withIdentifier: "stackSegue", sender: self)
+    }
+    
     @IBAction func confirmTapped(_ sender: Any) {
         textF.resignFirstResponder()
         if let num = Int(textF.text!) {
@@ -69,6 +74,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
             textF.text = ""
         }
     }
+    
+    @IBAction func makeFoolishSteps(_ sender: Any) {
+        performSegue(withIdentifier: "GoToStairs", sender: self)
+    }
+    
     func pushDetail(sender: UITapGestureRecognizer) {
         let donut = sender.view
         var i = 1

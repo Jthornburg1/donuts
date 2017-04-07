@@ -13,7 +13,15 @@ import GoogleMapsCore
 
 class PlacesVC: UIViewController {
     
+    @IBOutlet weak var longitude: UILabel!
+    @IBOutlet weak var latitude: UILabel!
+    @IBOutlet weak var countryLabel: UILabel!
+    @IBOutlet weak var stateLabel: UILabel!
+    @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var selectButton: UIButton!
+    
+    var place: GMSPlace?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         selectButton.layer.cornerRadius = 22
@@ -27,4 +35,6 @@ class PlacesVC: UIViewController {
         autoCompleteController.autocompleteFilter = placeFilter
         present(autoCompleteController, animated: true, completion: nil)
     }
+    
+    
 }
