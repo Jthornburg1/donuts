@@ -17,6 +17,7 @@
 		D2A4D1481E7B25C20093C616 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4D1471E7B25C20093C616 /* UIColor+Extensions.swift */; };
 		D2B2A5321E70BAF4007ECF9D /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B2A5311E70BAF4007ECF9D /* PlacesVC.swift */; };
 		D2B2A5351E70BB7B007ECF9D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B2A5341E70BB7B007ECF9D /* UIViewController+Extensions.swift */; };
+		D2B2D0DB1E9C022B005C76F4 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B2D0DA1E9C022B005C76F4 /* Reachability.swift */; };
 		D2B7BE151E69DF60001B2BB4 /* ActualGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B7BE141E69DF60001B2BB4 /* ActualGameViewController.swift */; };
 		D2B7BE171E69E00C001B2BB4 /* HanoiPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B7BE161E69E00C001B2BB4 /* HanoiPin.swift */; };
 		D2BEBAFE1E6DF1940008A8C6 /* LocationerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BEBAFD1E6DF1940008A8C6 /* LocationerVC.swift */; };
@@ -69,6 +70,7 @@
 		D2A4D1471E7B25C20093C616 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		D2B2A5311E70BAF4007ECF9D /* PlacesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
 		D2B2A5341E70BB7B007ECF9D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		D2B2D0DA1E9C022B005C76F4 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		D2B7BE141E69DF60001B2BB4 /* ActualGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActualGameViewController.swift; sourceTree = "<group>"; };
 		D2B7BE161E69E00C001B2BB4 /* HanoiPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HanoiPin.swift; sourceTree = "<group>"; };
 		D2BEBAFD1E6DF1940008A8C6 /* LocationerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationerVC.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			children = (
 				D2CEC4EE1E54E614002A79BB /* CircleMaker.swift */,
 				D2D9E96C1E97FB3F0037E48B /* StairwellCreator.swift */,
+				D2B2D0DA1E9C022B005C76F4 /* Reachability.swift */,
 			);
 			name = Helpers;
 			path = ..;
@@ -528,6 +531,7 @@
 			files = (
 				D2CEC4BF1E54E092002A79BB /* ViewController.swift in Sources */,
 				D2A4D1481E7B25C20093C616 /* UIColor+Extensions.swift in Sources */,
+				D2B2D0DB1E9C022B005C76F4 /* Reachability.swift in Sources */,
 				D2599D6F1E6E122F0039A23D /* Country.swift in Sources */,
 				D2D9E96D1E97FB3F0037E48B /* StairwellCreator.swift in Sources */,
 				D2B2A5351E70BB7B007ECF9D /* UIViewController+Extensions.swift in Sources */,
