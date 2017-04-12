@@ -13,6 +13,7 @@
 		D2599D6F1E6E122F0039A23D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2599D6E1E6E122F0039A23D /* Country.swift */; };
 		D2599D711E6E181C0039A23D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2599D701E6E181C0039A23D /* State.swift */; };
 		D2599D731E6E279B0039A23D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2599D721E6E279B0039A23D /* City.swift */; };
+		D294D1FB1E9ED9F000508728 /* YelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294D1FA1E9ED9F000508728 /* YelpVC.swift */; };
 		D2A4D1461E7B1B320093C616 /* AnimatingStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4D1451E7B1B320093C616 /* AnimatingStackViewController.swift */; };
 		D2A4D1481E7B25C20093C616 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4D1471E7B25C20093C616 /* UIColor+Extensions.swift */; };
 		D2B2A5321E70BAF4007ECF9D /* PlacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B2A5311E70BAF4007ECF9D /* PlacesVC.swift */; };
@@ -66,6 +67,7 @@
 		D2599D6E1E6E122F0039A23D /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		D2599D701E6E181C0039A23D /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		D2599D721E6E279B0039A23D /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		D294D1FA1E9ED9F000508728 /* YelpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpVC.swift; sourceTree = "<group>"; };
 		D2A4D1451E7B1B320093C616 /* AnimatingStackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatingStackViewController.swift; sourceTree = "<group>"; };
 		D2A4D1471E7B25C20093C616 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		D2B2A5311E70BAF4007ECF9D /* PlacesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesVC.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				D2B2A5311E70BAF4007ECF9D /* PlacesVC.swift */,
 				D2A4D1451E7B1B320093C616 /* AnimatingStackViewController.swift */,
 				D2D9E96E1E97FCCA0037E48B /* StairsViewController.swift */,
+				D294D1FA1E9ED9F000508728 /* YelpVC.swift */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				D2A4D1461E7B1B320093C616 /* AnimatingStackViewController.swift in Sources */,
 				D2B7BE151E69DF60001B2BB4 /* ActualGameViewController.swift in Sources */,
 				D2BEBAFE1E6DF1940008A8C6 /* LocationerVC.swift in Sources */,
+				D294D1FB1E9ED9F000508728 /* YelpVC.swift in Sources */,
 				D2CEC4ED1E54E1FF002A79BB /* DonutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

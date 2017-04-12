@@ -38,6 +38,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func goToYelp(_ sender: Any) {
+        performSegue(withIdentifier: "YelpSegue", sender: self)
+    }
+    
     @IBAction func LocaButtonTapped(_ sender: Any) {
         
     }
