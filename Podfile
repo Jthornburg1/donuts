@@ -10,6 +10,7 @@ target 'towersOfHanoi' do
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
   pod 'GoogleMaps'
+  pod 'YelpAPI'
 
   target 'towersOfHanoiTests' do
     inherit! :search_paths

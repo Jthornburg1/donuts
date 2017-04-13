@@ -10,47 +10,87 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>057612C31241123A1B53E2F8FEE23AB0</key>
+		<key>03A7AB515D5EDCB4B6FA65F14842235A</key>
 		<dict>
-			<key>children</key>
+			<key>baseConfigurationReference</key>
+			<string>FE88E8A9C72B27A272C5DA641A8AAA6F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-towersOfHanoi/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.2</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-towersOfHanoi/Pods-towersOfHanoi.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_towersOfHanoi</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>0A5095E37F7C46996FB30FD445EC5B45</key>
+		<dict>
+			<key>buildConfigurations</key>
 			<array>
-				<string>8BA44F82F96D164DA342FB09A0BEE150</string>
-				<string>9595338FF99D6E406412D70BB160C308</string>
+				<string>03A7AB515D5EDCB4B6FA65F14842235A</string>
+				<string>8CD20423667751D27A21C5250B8F1452</string>
 			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>GooglePlaces</string>
-			<key>path</key>
-			<string>GooglePlaces</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>07790BD46C0A51AE9AF086D8F62242CC</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>GooglePlacePicker.framework</string>
-			<key>path</key>
-			<string>Frameworks/GooglePlacePicker.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1117A6D1FE68A6F983D560933AF5E265</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>GoogleMapsCore.framework</string>
-			<key>path</key>
-			<string>Maps/Frameworks/GoogleMapsCore.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>XCConfigurationList</string>
 		</dict>
 		<key>1137BFB34849FCABE882CE441668C4BE</key>
 		<dict>
@@ -119,6 +159,42 @@
 			<string>XCBuildConfiguration</string>
 			<key>name</key>
 			<string>Debug</string>
+		</dict>
+		<key>12BE6CA5114DD6025396540C45A64DFE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8323A5DE7E198EE8EE5A63E4DE5E8E12</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1341367A75B81482D9C90DCC80EAEA22</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>YLPBusinessReviews.m</string>
+			<key>path</key>
+			<string>Classes/Response/YLPBusinessReviews.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1547E376F3A6751E340FB724FE07C4A3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>33306CBB4F1EBB89B6E2352536CB235C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>157C82E6B1ECDD54DF9A4433E9DAA5FF</key>
 		<dict>
@@ -299,18 +375,78 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>24E6408847EA4697EC99A3C22F9B2F8E</key>
+		<key>1F0F405D3D455A6B30D405D0CF773543</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>CA9245AB5B86A5BCD1E0D3BF7079D64B</string>
+				<string>ECFB86B48B6E46F29384F4F6A498AFFF</string>
+				<string>A2773A3C9391897F8BE1817ABB385F4F</string>
+				<string>9100D2B9AC24D0F72E6FA3CA5EDE2A79</string>
+				<string>964B84D11BCDAB912971E48D991070C7</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Resources</string>
+			<string>Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FD6D3EC8A8C102C90CACEC90B5F4F18</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A775CDE5FB2FD63909D70DCBC2EF26C5</string>
+				<string>12BE6CA5114DD6025396540C45A64DFE</string>
+				<string>F12A50EA61A0BF5B2CB132853B7E066F</string>
+				<string>20E37F1A71B59A655B22478D516FC2E5</string>
+				<string>DD96E390325D227B92F0541A21BD472A</string>
+				<string>6DA94DC1F130C18A3DB5DF51E8BDAB98</string>
+				<string>2FC53EE5FDC7270334A8449C94DB2BD8</string>
+				<string>B44EB1FF4B064365826D4E9E5D268FE9</string>
+				<string>82CC4D87E4D54D013C030A98711A923C</string>
+				<string>44666D73996D6059BA4BE8E4A1E08645</string>
+				<string>5BAFFF2A3CFA1D96E6079984265D31CC</string>
+				<string>50644C1D4F03CB4740936A98154FC9FA</string>
+				<string>F9310B4A3C01A47F2F342E799050F33C</string>
+				<string>5775D2FD02AC930E3C81CC4B2F22E3A2</string>
+				<string>80AAC34D9714D2DF6D942E0890E4A858</string>
+				<string>50697FDEC8BEFA105CE2F69CEFD20EAD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>207F41D3D8B0955B5975F58767DEC335</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YLPLocation.h</string>
+			<key>path</key>
+			<string>Classes/Response/YLPLocation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>20E37F1A71B59A655B22478D516FC2E5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1341367A75B81482D9C90DCC80EAEA22</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2591B3935B86A55CEBF8D7D7699B58EE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>285F4970EA9AAEB3B8063DF9A4063A06</key>
 		<dict>
@@ -320,6 +456,34 @@
 			<string>PBXFileReference</string>
 			<key>path</key>
 			<string>Pods-towersOfHanoiTests.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2A10593C6CB36F948189FD9D258D4960</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>YLPBusiness.m</string>
+			<key>path</key>
+			<string>Classes/Response/YLPBusiness.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2B0A743C6670A0697BA881903EF65983</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>YelpAPI-umbrella.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -337,18 +501,67 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>32C828A968DE569190927F1F7A42758C</key>
+		<key>2F13387E0DB6A2AECCA833E51C7B84FA</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>children</key>
 			<array>
-				<string>D4FA852C20E22C2D94B9029D8BCAF9B6</string>
+				<string>5CE8744A8123EBAF2B013959A9994407</string>
 			</array>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2FC53EE5FDC7270334A8449C94DB2BD8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FB7A354E85F8F795A403CFE3F03904C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3238A4E2DB56CAF57ACAD0149F4FDB43</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8AD85BCFFE4223C556341726D21474C5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>33306CBB4F1EBB89B6E2352536CB235C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YLPCoordinate.h</string>
+			<key>path</key>
+			<string>Classes/Common/YLPCoordinate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>33566DDE8F7688562CF240C139AE5E5F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8BFDDD65292108BAAF8643081D6FB6DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>340A6ED1CC69B07E4BCEB0D84A25C166</key>
 		<dict>
@@ -358,6 +571,62 @@
 			<string>PBXFileReference</string>
 			<key>path</key>
 			<string>Pods-towersOfHanoi.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3461B6A0C04F2F0FCF4E28E8352C67F2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>YLPUser.m</string>
+			<key>path</key>
+			<string>Classes/Response/YLPUser.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3484527EA88CCDC6001C4894ADFA600E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>GoogleMapsCore.framework</string>
+			<key>path</key>
+			<string>Maps/Frameworks/GoogleMapsCore.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3B507AA18E387ED35FB5FD45FD69F222</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>GoogleMaps.framework</string>
+			<key>path</key>
+			<string>Maps/Frameworks/GoogleMaps.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BFC5752FD79E4DEC05EF8793CC967BA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YLPClient+Reviews.h</string>
+			<key>path</key>
+			<string>Classes/Client/YLPClient+Reviews.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -374,6 +643,34 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>40984FFA2E338700F84DA09CAAE08FF3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>YLPReview.m</string>
+			<key>path</key>
+			<string>Classes/Response/YLPReview.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>41398648918AEBF63834BF552F17E6B8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>77E459828D7E0F6845FE7F9828AF367C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>423DC97D953D97F59B9D2A958483C7D2</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -387,10 +684,10 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>429C760526CF553CAC904FD7B7EB0DC2</key>
+		<key>44666D73996D6059BA4BE8E4A1E08645</key>
 		<dict>
 			<key>fileRef</key>
-			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
+			<string>514DBC002926DF12A82946F3FEC4CAFB</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -407,34 +704,33 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>45A6375AD18305E8BA7B79AD1BE61E9D</key>
+		<key>4861D557B4D08BA13E628E3EB3DB431F</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>8BCCCA295DEE22197B0C283775AB5A26</string>
-				<string>1117A6D1FE68A6F983D560933AF5E265</string>
-			</array>
+			<key>fileRef</key>
+			<string>69A960A9F8054F01C25D1699BE11E72F</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
-		<key>4884BF82F028B89AAC0BCD53E639BCA9</key>
+		<key>498E243E8DE227315594D99A1487373A</key>
 		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
+			<key>fileRef</key>
+			<string>CF291DA2F19AB6CC3DB375BD3D9F16D5</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_towersOfHanoi.framework</string>
-			<key>path</key>
-			<string>Pods-towersOfHanoi.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>4AA3E62033706F8F6277A17C364FC8DC</key>
 		<dict>
@@ -448,6 +744,35 @@
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C6D702360029FBDD886F999EB371341</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3BFC5752FD79E4DEC05EF8793CC967BA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4D808B7514A1A5104573F60F44945AAA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YelpAPI.h</string>
+			<key>path</key>
+			<string>Classes/YelpAPI.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -472,7 +797,7 @@
 			<key>productName</key>
 			<string>Pods-towersOfHanoiUITests</string>
 			<key>productReference</key>
-			<string>6825472418DA816347A030C467954964</string>
+			<string>F8908C52B3FD1408263FF9D74A7E57A7</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
@@ -502,18 +827,88 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>535BA40BC376D65ECBE2817DF1A79347</key>
+		<key>4E9E1F4259207073A2A9C864E5D7D5FC</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>5CEB57936199608525B14511170680D7</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YLPUser.h</string>
+			<key>path</key>
+			<string>Classes/Response/YLPUser.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>50644C1D4F03CB4740936A98154FC9FA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DEDB6E46A4340717D515CEA11E4AA565</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>50697FDEC8BEFA105CE2F69CEFD20EAD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3461B6A0C04F2F0FCF4E28E8352C67F2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>50AF73049C013E4FB577E2723D8F8A6C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7BDE80CCD57AF373022BC6DAA48881C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>514DBC002926DF12A82946F3FEC4CAFB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>YLPClient.m</string>
+			<key>path</key>
+			<string>Classes/Client/YLPClient.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>52D54E113636DCBBF837F5E6CF4718B4</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>E0FA7A4ED27F581DEC86C3C06157CA03</string>
+			<key>buildPhases</key>
+			<array>
+				<string>1FD6D3EC8A8C102C90CACEC90B5F4F18</string>
+				<string>41398648918AEBF63834BF552F17E6B8</string>
+				<string>F5591D9BA4BBB843709763DB52C47AC7</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>YelpAPI</string>
+			<key>productName</key>
+			<string>YelpAPI</string>
+			<key>productReference</key>
+			<string>755C7AE1F169A0E184F69EB68EB2D4DC</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
 		</dict>
 		<key>5511A14BCEE3750F665EF5818A7C1C73</key>
 		<dict>
@@ -525,6 +920,21 @@
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
 			<string>Pods-towersOfHanoiTests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>55546AAE326B9AB069AED33292A968C3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YLPSortType.h</string>
+			<key>path</key>
+			<string>Classes/Request/YLPSortType.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -541,6 +951,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>555F9DF32BF676EA239550492BDA2C30</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C38F032775A9DE8E6B882CA973C0232D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>55901715F1AEA7B81213D2DA458A2D45</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -553,6 +976,27 @@
 			<string>Pods-towersOfHanoi-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5621C68FFC6A15C5848F2E46AD6F2C86</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5558B30F8EA0251D17CBB646618F10D7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>5775D2FD02AC930E3C81CC4B2F22E3A2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>40984FFA2E338700F84DA09CAAE08FF3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>57F778495C46E29B16E76C9314446D30</key>
 		<dict>
@@ -635,10 +1079,41 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>5CEB57936199608525B14511170680D7</key>
+		<key>5BAFFF2A3CFA1D96E6079984265D31CC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5558B30F8EA0251D17CBB646618F10D7</string>
+			<string>8B210152B7BE77230952E1F8D7107D2C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5CE8744A8123EBAF2B013959A9994407</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>GoogleMapsBase.framework</string>
+			<key>path</key>
+			<string>Base/Frameworks/GoogleMapsBase.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5EFC5A0ECDF5EE173D645D7BDF90BD71</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>YelpAPI.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>615838B2A9F73487057812C77644CFD8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>55546AAE326B9AB069AED33292A968C3</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -648,6 +1123,108 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>6294B8225EFEE0D3A05411E20E5D797A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DBBFDD996F6FD5128B7C84E2D7E3A8B5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6362393A317E654D569326841F019846</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>YLPSearch.m</string>
+			<key>path</key>
+			<string>Classes/Response/YLPSearch.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>64F6077BC0B531DAB3EE2882ACCC62EF</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>DCF56A37D4FEC5521D10EAC4F77D9A7F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/YelpAPI/YelpAPI-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/YelpAPI/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/YelpAPI/YelpAPI.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>YelpAPI</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>654BC7D544FA0E8F548509358CE4F673</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2F13387E0DB6A2AECCA833E51C7B84FA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>656B9F9369AF93B9151EC08BFD2666C1</key>
 		<dict>
@@ -662,34 +1239,36 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>65DF3723B262AD4D0FF9C820902A0328</key>
+		<key>676621D28C669C2784B50F6499BF9B9D</key>
 		<dict>
-			<key>buildConfigurations</key>
+			<key>children</key>
 			<array>
-				<string>DE473DF149266146EA1E97A10CF0B685</string>
-				<string>FD42E64D6055830ED71CAE4E322C57EA</string>
+				<string>F90E53DE1B14E839D1E556239C907E16</string>
+				<string>D7DFD0BF263AA4341107EE60B33A55AD</string>
+				<string>F8908C52B3FD1408263FF9D74A7E57A7</string>
+				<string>755C7AE1F169A0E184F69EB68EB2D4DC</string>
 			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
 			<key>isa</key>
-			<string>XCConfigurationList</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6825472418DA816347A030C467954964</key>
+		<key>69A960A9F8054F01C25D1699BE11E72F</key>
 		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
 			<key>includeInIndex</key>
-			<string>0</string>
+			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Pods_towersOfHanoiUITests.framework</string>
+			<string>YLPQuery.h</string>
 			<key>path</key>
-			<string>Pods-towersOfHanoiUITests.framework</string>
+			<string>Classes/Request/YLPQuery.h</string>
 			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>69F6D5AD5D4005858BCC008743BE1E95</key>
 		<dict>
@@ -708,6 +1287,41 @@
 			<string>text</string>
 			<key>path</key>
 			<string>Pods-towersOfHanoiUITests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6CDC7CE702363B3BC3D0645C9BB11B97</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6DA94DC1F130C18A3DB5DF51E8BDAB98</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8E58C09A9F6AED1ECFC612C02630C3EE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6FB7A354E85F8F795A403CFE3F03904C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>YLPClient+PhoneSearch.m</string>
+			<key>path</key>
+			<string>Classes/Client/YLPClient+PhoneSearch.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -738,6 +1352,50 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>72E4559B97A81A0877721331519942F0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>973861FEAD56EA09AAB55F9A6C2B0CBB</string>
+				<string>8E729FC8F0AFAD19E7263C1AB3DD74CC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Maps</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74AF3275FE3AA7B0493D9C980EB5A71B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YLPClientPrivate.h</string>
+			<key>path</key>
+			<string>Classes/Client/YLPClientPrivate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>755C7AE1F169A0E184F69EB68EB2D4DC</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>YelpAPI.framework</string>
+			<key>path</key>
+			<string>YelpAPI.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
 		<key>768C973CD953079563789285C5C059D5</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -751,17 +1409,112 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7A999BD5B4C2C01904FC59776164FBE1</key>
+		<key>76C6FA7159D81BD83E32B7E7B9B940B2</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>45A6375AD18305E8BA7B79AD1BE61E9D</string>
-				<string>24E6408847EA4697EC99A3C22F9B2F8E</string>
-			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>Maps</string>
+			<string>GooglePlaces.framework</string>
+			<key>path</key>
+			<string>Frameworks/GooglePlaces.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>77E459828D7E0F6845FE7F9828AF367C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7927B730B64F6147E013526F96709C3C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B6099A728AC4FC981BC515BEA755C0EE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>7B06DA5C2016C41E3714A59C4DC0DC9D</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>DCF56A37D4FEC5521D10EAC4F77D9A7F</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/YelpAPI/YelpAPI-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/YelpAPI/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/YelpAPI/YelpAPI.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>YelpAPI</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7BDE80CCD57AF373022BC6DAA48881C2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YLPClient.h</string>
+			<key>path</key>
+			<string>Classes/Client/YLPClient.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -798,14 +1551,42 @@
 			<array>
 				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
 				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>C62832EC902B481843EFC870F9D95CC2</string>
-				<string>D39081324D0CE128AF00D98DF7AAF548</string>
+				<string>1F0F405D3D455A6B30D405D0CF773543</string>
+				<string>676621D28C669C2784B50F6499BF9B9D</string>
 				<string>4AA3E62033706F8F6277A17C364FC8DC</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F5A468C84F93A1858E6D3BF8253D7EC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>74AF3275FE3AA7B0493D9C980EB5A71B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Private</string>
+				</array>
+			</dict>
+		</dict>
+		<key>7F9782B84EF819766D8326826E46251E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8F126FC3969B2B22F31B9C800AEAB821</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Private</string>
+				</array>
+			</dict>
 		</dict>
 		<key>80287630AAD587D3E766EFEA06B38FAC</key>
 		<dict>
@@ -820,31 +1601,231 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>8BA44F82F96D164DA342FB09A0BEE150</key>
+		<key>8041FB59E161DA55B2FFA9444DD1D84A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YLPQueryPrivate.h</string>
+			<key>path</key>
+			<string>Classes/Request/YLPQueryPrivate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>80AAC34D9714D2DF6D942E0890E4A858</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6362393A317E654D569326841F019846</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8112365FCF4B4833CF2B76898FF7E8E4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>YLPQuery.m</string>
+			<key>path</key>
+			<string>Classes/Request/YLPQuery.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8217280A1E50E24BD73F2F01D3B3AA43</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4E9E1F4259207073A2A9C864E5D7D5FC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>82CC4D87E4D54D013C030A98711A923C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A1CA4980BEFC2E69FC8BEFF009E990D9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8323A5DE7E198EE8EE5A63E4DE5E8E12</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>YelpAPI-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>894D4A129ED0FE5393E66E15B88061AB</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>955D3A22EB34AB333524A949DC729F6B</string>
+				<string>EE08F5370DF39539C7A504FBD5FAAD2E</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Frameworks</string>
+			<string>Resources</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8BCCCA295DEE22197B0C283775AB5A26</key>
+		<key>8AD85BCFFE4223C556341726D21474C5</key>
 		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
+			<string>wrapper.plug-in</string>
 			<key>name</key>
-			<string>GoogleMaps.framework</string>
+			<string>GooglePlaces.bundle</string>
 			<key>path</key>
-			<string>Maps/Frameworks/GoogleMaps.framework</string>
+			<string>Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8B210152B7BE77230952E1F8D7107D2C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>YLPCoordinate.m</string>
+			<key>path</key>
+			<string>Classes/Common/YLPCoordinate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8B28693C75116E1CEA476358FC05F151</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>NSDictionary+YLPUtils.m</string>
+			<key>path</key>
+			<string>Classes/Response/NSDictionary+YLPUtils.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8B62AB201EB5A56FA458576A7FC1F81B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D823C335C1295AEE71873D629AA1036F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8BFDDD65292108BAAF8643081D6FB6DD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YLPClient+Business.h</string>
+			<key>path</key>
+			<string>Classes/Client/YLPClient+Business.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8CD20423667751D27A21C5250B8F1452</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>768C973CD953079563789285C5C059D5</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-towersOfHanoi/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>10.2</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-towersOfHanoi/Pods-towersOfHanoi.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_towersOfHanoi</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
 		</dict>
 		<key>8E41F71822444E760FB82BE4CED084C5</key>
 		<dict>
@@ -856,6 +1837,34 @@
 			<string>text.xcconfig</string>
 			<key>path</key>
 			<string>Pods-towersOfHanoiTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8E58C09A9F6AED1ECFC612C02630C3EE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>YLPClient+Business.m</string>
+			<key>path</key>
+			<string>Classes/Client/YLPClient+Business.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8E729FC8F0AFAD19E7263C1AB3DD74CC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F57716332135726BD635F15927DB1C72</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -872,29 +1881,34 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8FFA7EAE118844748AD9685060A6B673</key>
+		<key>8F126FC3969B2B22F31B9C800AEAB821</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>FD4ED290151C28ABCF7A3EA0217355EB</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Base</string>
+			<string>YLPResponsePrivate.h</string>
+			<key>path</key>
+			<string>Classes/Response/YLPResponsePrivate.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9335B78F64E389AD6BD28E5033911D2C</key>
+		<key>9100D2B9AC24D0F72E6FA3CA5EDE2A79</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>F769EDE7CC5A77CDBE3B2309AF3BD5FA</string>
+				<string>AFF81E253CAC6EC40E7638148702A3FB</string>
+				<string>3238A4E2DB56CAF57ACAD0149F4FDB43</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Resources</string>
+			<string>GooglePlaces</string>
+			<key>path</key>
+			<string>GooglePlaces</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -931,38 +1945,102 @@
 				</array>
 			</dict>
 		</dict>
-		<key>955D3A22EB34AB333524A949DC729F6B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>GooglePlaces.framework</string>
-			<key>path</key>
-			<string>Frameworks/GooglePlaces.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9595338FF99D6E406412D70BB160C308</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F8567FFA809DD02B36CFB593922A14EA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>95A9DC219D47AC3C2522B1DC690E5FE6</key>
 		<dict>
 			<key>fileRef</key>
 			<string>CEC22C73C1608DFA5D5D78BDCB218219</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>964B84D11BCDAB912971E48D991070C7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8B28693C75116E1CEA476358FC05F151</string>
+				<string>4D808B7514A1A5104573F60F44945AAA</string>
+				<string>CF291DA2F19AB6CC3DB375BD3D9F16D5</string>
+				<string>2A10593C6CB36F948189FD9D258D4960</string>
+				<string>DA34F0CC884A186A6813A9A40DC11EA0</string>
+				<string>1341367A75B81482D9C90DCC80EAEA22</string>
+				<string>D823C335C1295AEE71873D629AA1036F</string>
+				<string>D82A5A1FB91196765E46947A69925AF6</string>
+				<string>7BDE80CCD57AF373022BC6DAA48881C2</string>
+				<string>514DBC002926DF12A82946F3FEC4CAFB</string>
+				<string>8BFDDD65292108BAAF8643081D6FB6DD</string>
+				<string>8E58C09A9F6AED1ECFC612C02630C3EE</string>
+				<string>FAECAE7E674B9E822C1F9BF3FC45058A</string>
+				<string>6FB7A354E85F8F795A403CFE3F03904C</string>
+				<string>3BFC5752FD79E4DEC05EF8793CC967BA</string>
+				<string>D73032326738B5B5512C5C63D5253856</string>
+				<string>AE9B472F2C8D2EB9EC747429C7593CDF</string>
+				<string>A1CA4980BEFC2E69FC8BEFF009E990D9</string>
+				<string>74AF3275FE3AA7B0493D9C980EB5A71B</string>
+				<string>33306CBB4F1EBB89B6E2352536CB235C</string>
+				<string>8B210152B7BE77230952E1F8D7107D2C</string>
+				<string>207F41D3D8B0955B5975F58767DEC335</string>
+				<string>DEDB6E46A4340717D515CEA11E4AA565</string>
+				<string>69A960A9F8054F01C25D1699BE11E72F</string>
+				<string>8112365FCF4B4833CF2B76898FF7E8E4</string>
+				<string>8041FB59E161DA55B2FFA9444DD1D84A</string>
+				<string>8F126FC3969B2B22F31B9C800AEAB821</string>
+				<string>B6099A728AC4FC981BC515BEA755C0EE</string>
+				<string>40984FFA2E338700F84DA09CAAE08FF3</string>
+				<string>DBBFDD996F6FD5128B7C84E2D7E3A8B5</string>
+				<string>6362393A317E654D569326841F019846</string>
+				<string>55546AAE326B9AB069AED33292A968C3</string>
+				<string>4E9E1F4259207073A2A9C864E5D7D5FC</string>
+				<string>3461B6A0C04F2F0FCF4E28E8352C67F2</string>
+				<string>DA4E4B7F9F62BA9CF5434E39E2FD9568</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>YelpAPI</string>
+			<key>path</key>
+			<string>YelpAPI</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>971DF181589B2C58BFC791BA20CE5DE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2B0A743C6670A0697BA881903EF65983</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>973861FEAD56EA09AAB55F9A6C2B0CBB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3B507AA18E387ED35FB5FD45FD69F222</string>
+				<string>3484527EA88CCDC6001C4894ADFA600E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>97C5F4D1C6E2A87F3393DE0BEC701470</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>EBFC39EAFDBEB44E8FB3DBFB2BA08318</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>98C7327416D67E6406117D9C4E1FD623</key>
 		<dict>
@@ -1001,16 +2079,61 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>9C0A1FBBD02B7528347BC7FB84DE24F5</key>
+		<key>9A9E53E1C4FD4C04662D70DB11130509</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>0A5095E37F7C46996FB30FD445EC5B45</string>
+			<key>buildPhases</key>
+			<array>
+				<string>97C5F4D1C6E2A87F3393DE0BEC701470</string>
+				<string>C6174F940769EB8B90449948D9CFC171</string>
+				<string>C1A314460DA8FD68C7AAC6B86651EDB6</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>B5281035A72724DB91F3D8E871996BA7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-towersOfHanoi</string>
+			<key>productName</key>
+			<string>Pods-towersOfHanoi</string>
+			<key>productReference</key>
+			<string>F90E53DE1B14E839D1E556239C907E16</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>A1CA4980BEFC2E69FC8BEFF009E990D9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>YLPClient+Search.m</string>
+			<key>path</key>
+			<string>Classes/Client/YLPClient+Search.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A2773A3C9391897F8BE1817ABB385F4F</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>07790BD46C0A51AE9AF086D8F62242CC</string>
+				<string>555F9DF32BF676EA239550492BDA2C30</string>
+				<string>894D4A129ED0FE5393E66E15B88061AB</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Frameworks</string>
+			<string>GooglePlacePicker</string>
+			<key>path</key>
+			<string>GooglePlacePicker</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1046,6 +2169,13 @@
 			<string>Info.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A775CDE5FB2FD63909D70DCBC2EF26C5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8B28693C75116E1CEA476358FC05F151</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>A910AAC2432CB8569EB0E63E6E816F7D</key>
 		<dict>
@@ -1219,30 +2349,79 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B3FD21370EADDB6B8B4E53CBE72BE227</key>
+		<key>AE9B472F2C8D2EB9EC747429C7593CDF</key>
 		<dict>
-			<key>buildConfigurationList</key>
-			<string>65DF3723B262AD4D0FF9C820902A0328</string>
-			<key>buildPhases</key>
-			<array>
-				<string>32C828A968DE569190927F1F7A42758C</string>
-				<string>FDB5FF0C8F8255E9CD9A12AA5461189F</string>
-				<string>535BA40BC376D65ECBE2817DF1A79347</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Pods-towersOfHanoi</string>
-			<key>productName</key>
-			<string>Pods-towersOfHanoi</string>
-			<key>productReference</key>
-			<string>4884BF82F028B89AAC0BCD53E639BCA9</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
+			<string>YLPClient+Search.h</string>
+			<key>path</key>
+			<string>Classes/Client/YLPClient+Search.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AFF81E253CAC6EC40E7638148702A3FB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>76C6FA7159D81BD83E32B7E7B9B940B2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B44EB1FF4B064365826D4E9E5D268FE9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D73032326738B5B5512C5C63D5253856</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B5281035A72724DB91F3D8E871996BA7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>YelpAPI</string>
+			<key>target</key>
+			<string>52D54E113636DCBBF837F5E6CF4718B4</string>
+			<key>targetProxy</key>
+			<string>B8D610C69D614512296A4BEACF8CABD2</string>
+		</dict>
+		<key>B6099A728AC4FC981BC515BEA755C0EE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YLPReview.h</string>
+			<key>path</key>
+			<string>Classes/Response/YLPReview.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B8D610C69D614512296A4BEACF8CABD2</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>52D54E113636DCBBF837F5E6CF4718B4</string>
+			<key>remoteInfo</key>
+			<string>YelpAPI</string>
 		</dict>
 		<key>B98F018A9B515720B8A5F59AFDE39650</key>
 		<dict>
@@ -1257,6 +2436,20 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>BAD2AFB419AF4C19880404A5CB105881</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AE9B472F2C8D2EB9EC747429C7593CDF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
 		<dict>
 			<key>children</key>
@@ -1270,18 +2463,69 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C62832EC902B481843EFC870F9D95CC2</key>
+		<key>C1A314460DA8FD68C7AAC6B86651EDB6</key>
 		<dict>
-			<key>children</key>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>E5C0912CEC7444CFF51EFFE502270519</string>
-				<string>CCA175DF4D87459CA14C4E01BCFDEF95</string>
-				<string>057612C31241123A1B53E2F8FEE23AB0</string>
+				<string>5621C68FFC6A15C5848F2E46AD6F2C86</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C38F032775A9DE8E6B882CA973C0232D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>Pods</string>
+			<string>GooglePlacePicker.framework</string>
+			<key>path</key>
+			<string>Frameworks/GooglePlacePicker.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C49A670361D945E70C57BD6E263530F6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FAECAE7E674B9E822C1F9BF3FC45058A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C6174F940769EB8B90449948D9CFC171</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2591B3935B86A55CEBF8D7D7699B58EE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C70F515E1937EEC3669518CC1B360361</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>YelpAPI-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1311,21 +2555,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>CA9245AB5B86A5BCD1E0D3BF7079D64B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.plug-in</string>
-			<key>name</key>
-			<string>GoogleMaps.bundle</string>
-			<key>path</key>
-			<string>Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>CB0AA00B3F966C8A1899D617C32EFC2D</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1349,22 +2578,6 @@
 			<string>text.script.sh</string>
 			<key>path</key>
 			<string>Pods-towersOfHanoiTests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CCA175DF4D87459CA14C4E01BCFDEF95</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9C0A1FBBD02B7528347BC7FB84DE24F5</string>
-				<string>9335B78F64E389AD6BD28E5033911D2C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>GooglePlacePicker</string>
-			<key>path</key>
-			<string>GooglePlacePicker</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1392,31 +2605,18 @@
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>D1DBCD0071D70866EBEFA8E983E0A2FE</key>
+		<key>CF291DA2F19AB6CC3DB375BD3D9F16D5</key>
 		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>GoogleMapsBase.framework</string>
+			<string>YLPBusiness.h</string>
 			<key>path</key>
-			<string>Base/Frameworks/GoogleMapsBase.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D39081324D0CE128AF00D98DF7AAF548</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4884BF82F028B89AAC0BCD53E639BCA9</string>
-				<string>F1542B4BBC8B4BE8D4D14843CAAA7865</string>
-				<string>6825472418DA816347A030C467954964</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
+			<string>Classes/Response/YLPBusiness.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1459,7 +2659,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>D39081324D0CE128AF00D98DF7AAF548</string>
+			<string>676621D28C669C2784B50F6499BF9B9D</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -1468,17 +2668,106 @@
 			<string></string>
 			<key>targets</key>
 			<array>
-				<string>B3FD21370EADDB6B8B4E53CBE72BE227</string>
+				<string>9A9E53E1C4FD4C04662D70DB11130509</string>
 				<string>E9580E0EBF57A40626EF062B3F0D31E2</string>
 				<string>4DEF39F6B32853317F73BFFD5E5D133E</string>
+				<string>52D54E113636DCBBF837F5E6CF4718B4</string>
 			</array>
 		</dict>
-		<key>D4FA852C20E22C2D94B9029D8BCAF9B6</key>
+		<key>D73032326738B5B5512C5C63D5253856</key>
 		<dict>
-			<key>fileRef</key>
-			<string>55901715F1AEA7B81213D2DA458A2D45</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>YLPClient+Reviews.m</string>
+			<key>path</key>
+			<string>Classes/Client/YLPClient+Reviews.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D7DFD0BF263AA4341107EE60B33A55AD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_towersOfHanoiTests.framework</string>
+			<key>path</key>
+			<string>Pods-towersOfHanoiTests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>D823C335C1295AEE71873D629AA1036F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YLPCategory.h</string>
+			<key>path</key>
+			<string>Classes/Response/YLPCategory.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D82A5A1FB91196765E46947A69925AF6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>YLPCategory.m</string>
+			<key>path</key>
+			<string>Classes/Response/YLPCategory.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA34F0CC884A186A6813A9A40DC11EA0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YLPBusinessReviews.h</string>
+			<key>path</key>
+			<string>Classes/Response/YLPBusinessReviews.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA4E4B7F9F62BA9CF5434E39E2FD9568</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6CDC7CE702363B3BC3D0645C9BB11B97</string>
+				<string>5EFC5A0ECDF5EE173D645D7BDF90BD71</string>
+				<string>DCF56A37D4FEC5521D10EAC4F77D9A7F</string>
+				<string>8323A5DE7E198EE8EE5A63E4DE5E8E12</string>
+				<string>C70F515E1937EEC3669518CC1B360361</string>
+				<string>2B0A743C6670A0697BA881903EF65983</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/YelpAPI</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>DA8C28DF88B2F66D8334E45599D99C66</key>
 		<dict>
@@ -1492,6 +2781,34 @@
 			<string>PBXHeadersBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
+		</dict>
+		<key>DBBFDD996F6FD5128B7C84E2D7E3A8B5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YLPSearch.h</string>
+			<key>path</key>
+			<string>Classes/Response/YLPSearch.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DCF56A37D4FEC5521D10EAC4F77D9A7F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>YelpAPI.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>DD26494CB1EFCF5A8C70DB1EF0D8BD91</key>
 		<dict>
@@ -1517,6 +2834,13 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>DD96E390325D227B92F0541A21BD472A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D82A5A1FB91196765E46947A69925AF6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>DDA4B4E11B9EE1F044DE32E00DB07117</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -1530,73 +2854,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>DE473DF149266146EA1E97A10CF0B685</key>
+		<key>DEDB6E46A4340717D515CEA11E4AA565</key>
 		<dict>
-			<key>baseConfigurationReference</key>
-			<string>FE88E8A9C72B27A272C5DA641A8AAA6F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-towersOfHanoi/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.2</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-towersOfHanoi/Pods-towersOfHanoi.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_towersOfHanoi</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
 			<key>name</key>
-			<string>Debug</string>
+			<string>YLPLocation.m</string>
+			<key>path</key>
+			<string>Classes/Response/YLPLocation.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>DF3E523177D6DE0762D539B2879BE4A1</key>
 		<dict>
@@ -1604,6 +2875,34 @@
 			<string>AB83C49F4F23CC913C9076499D5F89A6</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>E0FA7A4ED27F581DEC86C3C06157CA03</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7B06DA5C2016C41E3714A59C4DC0DC9D</string>
+				<string>64F6077BC0B531DAB3EE2882ACCC62EF</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>E2175513DBC7606E1C78A47D2D86D792</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8041FB59E161DA55B2FFA9444DD1D84A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Private</string>
+				</array>
+			</dict>
 		</dict>
 		<key>E579A767FDDD6C0A5D576B8DB11E8EE7</key>
 		<dict>
@@ -1629,21 +2928,33 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>E5C0912CEC7444CFF51EFFE502270519</key>
+		<key>E672146D2DEEB3C3280E4E86BF85ECDC</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>8FFA7EAE118844748AD9685060A6B673</string>
-				<string>7A999BD5B4C2C01904FC59776164FBE1</string>
-			</array>
+			<key>fileRef</key>
+			<string>4D808B7514A1A5104573F60F44945AAA</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>GoogleMaps</string>
-			<key>path</key>
-			<string>GoogleMaps</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>E7A1CB41FE50B6543393D69004CDD472</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA34F0CC884A186A6813A9A40DC11EA0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>E9580E0EBF57A40626EF062B3F0D31E2</key>
 		<dict>
@@ -1666,26 +2977,34 @@
 			<key>productName</key>
 			<string>Pods-towersOfHanoiTests</string>
 			<key>productReference</key>
-			<string>F1542B4BBC8B4BE8D4D14843CAAA7865</string>
+			<string>D7DFD0BF263AA4341107EE60B33A55AD</string>
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
-		<key>F1542B4BBC8B4BE8D4D14843CAAA7865</key>
+		<key>EBFC39EAFDBEB44E8FB3DBFB2BA08318</key>
 		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
+			<key>fileRef</key>
+			<string>55901715F1AEA7B81213D2DA458A2D45</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_towersOfHanoiTests.framework</string>
-			<key>path</key>
-			<string>Pods-towersOfHanoiTests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
+			<string>PBXBuildFile</string>
 		</dict>
-		<key>F769EDE7CC5A77CDBE3B2309AF3BD5FA</key>
+		<key>ECFB86B48B6E46F29384F4F6A498AFFF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>654BC7D544FA0E8F548509358CE4F673</string>
+				<string>72E4559B97A81A0877721331519942F0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>GoogleMaps</string>
+			<key>path</key>
+			<string>GoogleMaps</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EE08F5370DF39539C7A504FBD5FAAD2E</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1700,7 +3019,46 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F8567FFA809DD02B36CFB593922A14EA</key>
+		<key>F12A50EA61A0BF5B2CB132853B7E066F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2A10593C6CB36F948189FD9D258D4960</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F5591D9BA4BBB843709763DB52C47AC7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>971DF181589B2C58BFC791BA20CE5DE9</string>
+				<string>E672146D2DEEB3C3280E4E86BF85ECDC</string>
+				<string>498E243E8DE227315594D99A1487373A</string>
+				<string>E7A1CB41FE50B6543393D69004CDD472</string>
+				<string>8B62AB201EB5A56FA458576A7FC1F81B</string>
+				<string>33566DDE8F7688562CF240C139AE5E5F</string>
+				<string>C49A670361D945E70C57BD6E263530F6</string>
+				<string>4C6D702360029FBDD886F999EB371341</string>
+				<string>BAD2AFB419AF4C19880404A5CB105881</string>
+				<string>50AF73049C013E4FB577E2723D8F8A6C</string>
+				<string>7F5A468C84F93A1858E6D3BF8253D7EC</string>
+				<string>1547E376F3A6751E340FB724FE07C4A3</string>
+				<string>FB9B1B017C573FBDAD296E1F3876FFAE</string>
+				<string>4861D557B4D08BA13E628E3EB3DB431F</string>
+				<string>E2175513DBC7606E1C78A47D2D86D792</string>
+				<string>7F9782B84EF819766D8326826E46251E</string>
+				<string>7927B730B64F6147E013526F96709C3C</string>
+				<string>6294B8225EFEE0D3A05411E20E5D797A</string>
+				<string>615838B2A9F73487057812C77644CFD8</string>
+				<string>8217280A1E50E24BD73F2F01D3B3AA43</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F57716332135726BD635F15927DB1C72</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1709,11 +3067,77 @@
 			<key>lastKnownFileType</key>
 			<string>wrapper.plug-in</string>
 			<key>name</key>
-			<string>GooglePlaces.bundle</string>
+			<string>GoogleMaps.bundle</string>
 			<key>path</key>
-			<string>Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle</string>
+			<string>Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F8908C52B3FD1408263FF9D74A7E57A7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_towersOfHanoiUITests.framework</string>
+			<key>path</key>
+			<string>Pods-towersOfHanoiUITests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F90E53DE1B14E839D1E556239C907E16</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_towersOfHanoi.framework</string>
+			<key>path</key>
+			<string>Pods-towersOfHanoi.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>F9310B4A3C01A47F2F342E799050F33C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8112365FCF4B4833CF2B76898FF7E8E4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FAECAE7E674B9E822C1F9BF3FC45058A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>YLPClient+PhoneSearch.h</string>
+			<key>path</key>
+			<string>Classes/Client/YLPClient+PhoneSearch.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FB9B1B017C573FBDAD296E1F3876FFAE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>207F41D3D8B0955B5975F58767DEC335</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>FCE2FE085D638B4B688A81ADB38CE7F5</key>
 		<dict>
@@ -1727,100 +3151,6 @@
 			<string>Pods-towersOfHanoiUITests-umbrella.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FD42E64D6055830ED71CAE4E322C57EA</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>768C973CD953079563789285C5C059D5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-towersOfHanoi/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.2</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-towersOfHanoi/Pods-towersOfHanoi.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>org.cocoapods.${PRODUCT_NAME:rfc1034identifier}</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_towersOfHanoi</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FD4ED290151C28ABCF7A3EA0217355EB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D1DBCD0071D70866EBEFA8E983E0A2FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FDB5FF0C8F8255E9CD9A12AA5461189F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>429C760526CF553CAC904FD7B7EB0DC2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
 		</dict>
 		<key>FE88E8A9C72B27A272C5DA641A8AAA6F</key>
 		<dict>

@@ -13,6 +13,10 @@
 		D2599D6F1E6E122F0039A23D /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2599D6E1E6E122F0039A23D /* Country.swift */; };
 		D2599D711E6E181C0039A23D /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2599D701E6E181C0039A23D /* State.swift */; };
 		D2599D731E6E279B0039A23D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2599D721E6E279B0039A23D /* City.swift */; };
+		D27AFBBE1E9FF62100460485 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27AFBBD1E9FF62100460485 /* UIImageView+Extensions.swift */; };
+		D27AFBC01EA00AD900460485 /* HTTPCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27AFBBF1EA00AD900460485 /* HTTPCaller.swift */; };
+		D27AFBC21EA00C2300460485 /* YelpCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27AFBC11EA00C2300460485 /* YelpCategory.swift */; };
+		D27AFBC41EA012D800460485 /* YelpTermListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27AFBC31EA012D800460485 /* YelpTermListVC.swift */; };
 		D294D1FB1E9ED9F000508728 /* YelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D294D1FA1E9ED9F000508728 /* YelpVC.swift */; };
 		D2A4D1461E7B1B320093C616 /* AnimatingStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4D1451E7B1B320093C616 /* AnimatingStackViewController.swift */; };
 		D2A4D1481E7B25C20093C616 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A4D1471E7B25C20093C616 /* UIColor+Extensions.swift */; };
@@ -22,6 +26,8 @@
 		D2B7BE151E69DF60001B2BB4 /* ActualGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B7BE141E69DF60001B2BB4 /* ActualGameViewController.swift */; };
 		D2B7BE171E69E00C001B2BB4 /* HanoiPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B7BE161E69E00C001B2BB4 /* HanoiPin.swift */; };
 		D2BEBAFE1E6DF1940008A8C6 /* LocationerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BEBAFD1E6DF1940008A8C6 /* LocationerVC.swift */; };
+		D2C41A781E9FC5AF008BD67A /* YelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C41A761E9FC5AF008BD67A /* YelpCell.swift */; };
+		D2C41A791E9FC5AF008BD67A /* YelpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C41A771E9FC5AF008BD67A /* YelpCell.xib */; };
 		D2C9C2311E689F5B008B3D52 /* PanTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C9C2301E689F5B008B3D52 /* PanTester.swift */; };
 		D2CEC4BD1E54E092002A79BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEC4BC1E54E092002A79BB /* AppDelegate.swift */; };
 		D2CEC4BF1E54E092002A79BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CEC4BE1E54E092002A79BB /* ViewController.swift */; };
@@ -67,6 +73,10 @@
 		D2599D6E1E6E122F0039A23D /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		D2599D701E6E181C0039A23D /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		D2599D721E6E279B0039A23D /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		D27AFBBD1E9FF62100460485 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		D27AFBBF1EA00AD900460485 /* HTTPCaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPCaller.swift; sourceTree = "<group>"; };
+		D27AFBC11EA00C2300460485 /* YelpCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpCategory.swift; sourceTree = "<group>"; };
+		D27AFBC31EA012D800460485 /* YelpTermListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpTermListVC.swift; sourceTree = "<group>"; };
 		D294D1FA1E9ED9F000508728 /* YelpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpVC.swift; sourceTree = "<group>"; };
 		D2A4D1451E7B1B320093C616 /* AnimatingStackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatingStackViewController.swift; sourceTree = "<group>"; };
 		D2A4D1471E7B25C20093C616 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
@@ -76,6 +86,8 @@
 		D2B7BE141E69DF60001B2BB4 /* ActualGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActualGameViewController.swift; sourceTree = "<group>"; };
 		D2B7BE161E69E00C001B2BB4 /* HanoiPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HanoiPin.swift; sourceTree = "<group>"; };
 		D2BEBAFD1E6DF1940008A8C6 /* LocationerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationerVC.swift; sourceTree = "<group>"; };
+		D2C41A761E9FC5AF008BD67A /* YelpCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpCell.swift; sourceTree = "<group>"; };
+		D2C41A771E9FC5AF008BD67A /* YelpCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YelpCell.xib; sourceTree = "<group>"; };
 		D2C9C2301E689F5B008B3D52 /* PanTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanTester.swift; sourceTree = "<group>"; };
 		D2CEC4B91E54E092002A79BB /* towersOfHanoi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = towersOfHanoi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CEC4BC1E54E092002A79BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +154,7 @@
 			children = (
 				D2B2A5341E70BB7B007ECF9D /* UIViewController+Extensions.swift */,
 				D2A4D1471E7B25C20093C616 /* UIColor+Extensions.swift */,
+				D27AFBBD1E9FF62100460485 /* UIImageView+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -155,6 +168,7 @@
 				D2599D701E6E181C0039A23D /* State.swift */,
 				D2599D721E6E279B0039A23D /* City.swift */,
 				D2D9E96A1E97FB050037E48B /* OneStep.swift */,
+				D27AFBC11EA00C2300460485 /* YelpCategory.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -170,6 +184,7 @@
 				D2A4D1451E7B1B320093C616 /* AnimatingStackViewController.swift */,
 				D2D9E96E1E97FCCA0037E48B /* StairsViewController.swift */,
 				D294D1FA1E9ED9F000508728 /* YelpVC.swift */,
+				D27AFBC31EA012D800460485 /* YelpTermListVC.swift */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -180,6 +195,7 @@
 				D2CEC4EE1E54E614002A79BB /* CircleMaker.swift */,
 				D2D9E96C1E97FB3F0037E48B /* StairwellCreator.swift */,
 				D2B2D0DA1E9C022B005C76F4 /* Reachability.swift */,
+				D27AFBBF1EA00AD900460485 /* HTTPCaller.swift */,
 			);
 			name = Helpers;
 			path = ..;
@@ -192,10 +208,19 @@
 				D2CEC4C01E54E092002A79BB /* Main.storyboard */,
 				D2CEC4BC1E54E092002A79BB /* AppDelegate.swift */,
 				D2599D6C1E6E11220039A23D /* states.plist */,
-				D2CEC4C81E54E092002A79BB /* Info.plist */,
 				D2CEC4C31E54E092002A79BB /* Assets.xcassets */,
+				D2CEC4C81E54E092002A79BB /* Info.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		D2C41A751E9FC589008BD67A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D2C41A761E9FC5AF008BD67A /* YelpCell.swift */,
+				D2C41A771E9FC5AF008BD67A /* YelpCell.xib */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		D2CEC4B01E54E092002A79BB = {
@@ -223,6 +248,7 @@
 		D2CEC4BB1E54E092002A79BB /* towersOfHanoi */ = {
 			isa = PBXGroup;
 			children = (
+				D2C41A751E9FC589008BD67A /* Cells */,
 				D2B2A5331E70BB5E007ECF9D /* Extensions */,
 				D2B7BE131E69DEFC001B2BB4 /* Resources */,
 				D2B7BE111E69DECE001B2BB4 /* viewControllers */,
@@ -381,6 +407,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2C41A791E9FC5AF008BD67A /* YelpCell.xib in Resources */,
 				D2CEC4C71E54E092002A79BB /* LaunchScreen.storyboard in Resources */,
 				D2CEC4C41E54E092002A79BB /* Assets.xcassets in Resources */,
 				D2599D6D1E6E11220039A23D /* states.plist in Resources */,
@@ -534,9 +561,11 @@
 			files = (
 				D2CEC4BF1E54E092002A79BB /* ViewController.swift in Sources */,
 				D2A4D1481E7B25C20093C616 /* UIColor+Extensions.swift in Sources */,
+				D27AFBBE1E9FF62100460485 /* UIImageView+Extensions.swift in Sources */,
 				D2B2D0DB1E9C022B005C76F4 /* Reachability.swift in Sources */,
 				D2599D6F1E6E122F0039A23D /* Country.swift in Sources */,
 				D2D9E96D1E97FB3F0037E48B /* StairwellCreator.swift in Sources */,
+				D2C41A781E9FC5AF008BD67A /* YelpCell.swift in Sources */,
 				D2B2A5351E70BB7B007ECF9D /* UIViewController+Extensions.swift in Sources */,
 				D2CEC4BD1E54E092002A79BB /* AppDelegate.swift in Sources */,
 				D2599D711E6E181C0039A23D /* State.swift in Sources */,
@@ -550,8 +579,11 @@
 				D2A4D1461E7B1B320093C616 /* AnimatingStackViewController.swift in Sources */,
 				D2B7BE151E69DF60001B2BB4 /* ActualGameViewController.swift in Sources */,
 				D2BEBAFE1E6DF1940008A8C6 /* LocationerVC.swift in Sources */,
+				D27AFBC01EA00AD900460485 /* HTTPCaller.swift in Sources */,
+				D27AFBC21EA00C2300460485 /* YelpCategory.swift in Sources */,
 				D294D1FB1E9ED9F000508728 /* YelpVC.swift in Sources */,
 				D2CEC4ED1E54E1FF002A79BB /* DonutView.swift in Sources */,
+				D27AFBC41EA012D800460485 /* YelpTermListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
