@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="199" id="KGk-i7-Jjw" customClass="ReviewCell" customModule="towersOfHanoi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="311" height="199"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="311" height="198.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jMI-MU-onx">
+                        <rect key="frame" x="154" y="8" width="149" height="163"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="149" id="Zy4-e2-wgw"/>
+                            <constraint firstAttribute="height" constant="163" id="hdd-vd-QGn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBU-9X-t6N">
+                        <rect key="frame" x="8" y="57" width="138" height="20"/>
+                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                        <color key="textColor" red="0.27477281083072652" green="0.13773417251639908" blue="0.87204501295336789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yet-VD-WR3">
+                        <rect key="frame" x="8" y="8" width="41" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="Eau-F7-1Q1"/>
+                            <constraint firstAttribute="width" constant="41" id="U0R-mP-Zto"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRK-kL-zPh">
+                        <rect key="frame" x="57" y="8" width="89" height="20"/>
+                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUm-NL-KvQ">
+                        <rect key="frame" x="233" y="177" width="70" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="V0O-rc-PSS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="topMargin" secondItem="fRK-kL-zPh" secondAttribute="top" id="6ge-uD-iiR"/>
+                    <constraint firstItem="jMI-MU-onx" firstAttribute="leading" secondItem="fRK-kL-zPh" secondAttribute="trailing" constant="8" id="71y-Xa-kLf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jMI-MU-onx" secondAttribute="trailing" id="9J3-Nd-vd4"/>
+                    <constraint firstItem="jMI-MU-onx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-9.75" id="EZm-a7-pzg"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="tBU-9X-t6N" secondAttribute="leading" id="N3m-xJ-MZn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="FUm-NL-KvQ" secondAttribute="trailing" id="T69-EQ-XMI"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="Yet-VD-WR3" secondAttribute="leading" id="eM7-PO-tee"/>
+                    <constraint firstItem="tBU-9X-t6N" firstAttribute="top" secondItem="Yet-VD-WR3" secondAttribute="bottom" constant="8" id="eaD-pG-vP9"/>
+                    <constraint firstItem="fRK-kL-zPh" firstAttribute="leading" secondItem="Yet-VD-WR3" secondAttribute="trailing" constant="8" id="feS-84-VBS"/>
+                    <constraint firstItem="FUm-NL-KvQ" firstAttribute="top" secondItem="jMI-MU-onx" secondAttribute="bottom" constant="6" id="fyX-dL-t5l"/>
+                    <constraint firstAttribute="topMargin" secondItem="Yet-VD-WR3" secondAttribute="top" id="jqj-46-gVj"/>
+                    <constraint firstItem="jMI-MU-onx" firstAttribute="leading" secondItem="tBU-9X-t6N" secondAttribute="trailing" constant="8" id="te0-8M-lmA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="FUm-NL-KvQ" id="YNY-P4-IEF"/>
+                <outlet property="excerptLabel" destination="tBU-9X-t6N" id="2bK-Vp-fnK"/>
+                <outlet property="placeImage" destination="jMI-MU-onx" id="iGG-r3-Ggz"/>
+                <outlet property="userImage" destination="Yet-VD-WR3" id="xcx-Tn-Q3D"/>
+                <outlet property="usernameLabel" destination="fRK-kL-zPh" id="AAe-c2-ZFd"/>
+            </connections>
+            <point key="canvasLocation" x="29.5" y="-23.5"/>
+        </tableViewCell>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cRE-Vb-QWz">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+        </label>
+    </objects>
+</document>

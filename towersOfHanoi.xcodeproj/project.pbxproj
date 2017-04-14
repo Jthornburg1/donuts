@@ -26,6 +26,8 @@
 		D2B7BE151E69DF60001B2BB4 /* ActualGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B7BE141E69DF60001B2BB4 /* ActualGameViewController.swift */; };
 		D2B7BE171E69E00C001B2BB4 /* HanoiPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B7BE161E69E00C001B2BB4 /* HanoiPin.swift */; };
 		D2BEBAFE1E6DF1940008A8C6 /* LocationerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BEBAFD1E6DF1940008A8C6 /* LocationerVC.swift */; };
+		D2BF69921EA1315D0072BD2F /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF69901EA1315D0072BD2F /* ReviewCell.swift */; };
+		D2BF69931EA1315D0072BD2F /* ReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BF69911EA1315D0072BD2F /* ReviewCell.xib */; };
 		D2C41A781E9FC5AF008BD67A /* YelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C41A761E9FC5AF008BD67A /* YelpCell.swift */; };
 		D2C41A791E9FC5AF008BD67A /* YelpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C41A771E9FC5AF008BD67A /* YelpCell.xib */; };
 		D2C9C2311E689F5B008B3D52 /* PanTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C9C2301E689F5B008B3D52 /* PanTester.swift */; };
@@ -86,6 +88,8 @@
 		D2B7BE141E69DF60001B2BB4 /* ActualGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActualGameViewController.swift; sourceTree = "<group>"; };
 		D2B7BE161E69E00C001B2BB4 /* HanoiPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HanoiPin.swift; sourceTree = "<group>"; };
 		D2BEBAFD1E6DF1940008A8C6 /* LocationerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationerVC.swift; sourceTree = "<group>"; };
+		D2BF69901EA1315D0072BD2F /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		D2BF69911EA1315D0072BD2F /* ReviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewCell.xib; sourceTree = "<group>"; };
 		D2C41A761E9FC5AF008BD67A /* YelpCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpCell.swift; sourceTree = "<group>"; };
 		D2C41A771E9FC5AF008BD67A /* YelpCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YelpCell.xib; sourceTree = "<group>"; };
 		D2C9C2301E689F5B008B3D52 /* PanTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanTester.swift; sourceTree = "<group>"; };
@@ -219,6 +223,8 @@
 			children = (
 				D2C41A761E9FC5AF008BD67A /* YelpCell.swift */,
 				D2C41A771E9FC5AF008BD67A /* YelpCell.xib */,
+				D2BF69901EA1315D0072BD2F /* ReviewCell.swift */,
+				D2BF69911EA1315D0072BD2F /* ReviewCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -412,6 +418,7 @@
 				D2CEC4C41E54E092002A79BB /* Assets.xcassets in Resources */,
 				D2599D6D1E6E11220039A23D /* states.plist in Resources */,
 				D2CEC4C21E54E092002A79BB /* Main.storyboard in Resources */,
+				D2BF69931EA1315D0072BD2F /* ReviewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +589,7 @@
 				D27AFBC01EA00AD900460485 /* HTTPCaller.swift in Sources */,
 				D27AFBC21EA00C2300460485 /* YelpCategory.swift in Sources */,
 				D294D1FB1E9ED9F000508728 /* YelpVC.swift in Sources */,
+				D2BF69921EA1315D0072BD2F /* ReviewCell.swift in Sources */,
 				D2CEC4ED1E54E1FF002A79BB /* DonutView.swift in Sources */,
 				D27AFBC41EA012D800460485 /* YelpTermListVC.swift in Sources */,
 			);
