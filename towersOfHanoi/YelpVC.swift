@@ -21,10 +21,15 @@ class YelpVC: UIViewController, CLLocationManagerDelegate, UITableViewDataSource
     var searchterm: String?
     var ylpCoord: YLPCoordinate?
     var items = [YLPBusiness]()
-    
+    var label: UILabel?
+    var searchTitle: String?
+    var isUpdatingLocation = false
+    var hasUpdatedLocation = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.stopUpdatingLocation()
         
         tableView.isHidden = true
         
@@ -35,7 +40,13 @@ class YelpVC: UIViewController, CLLocationManagerDelegate, UITableViewDataSource
         let nib = UINib(nibName: "YelpCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "YelpCell")
         
-        askForPermission()
+        let time = DispatchTime.now() + 10
+        DispatchQueue.main.asyncAfter(deadline: time) {
+            
+            self.locationManager.startUpdatingLocation()
+            self.isUpdatingLocation = true
+            self.askForPermission()
+        }
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -54,8 +65,12 @@ class YelpVC: UIViewController, CLLocationManagerDelegate, UITableViewDataSource
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.items.removeAll()
-        self.tableView.isHidden = true
+        items.removeAll()
+        tableView.isHidden = true
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        
     }
     
     @IBAction func dismissTapped(_ sender: Any) {
@@ -68,6 +83,9 @@ class YelpVC: UIViewController, CLLocationManagerDelegate, UITableViewDataSource
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        label?.removeFromSuperview()
+        label = nil
+        
         if segue.identifier == "SearchTermSegue" {
             let vc = segue.destination as! YelpTermListVC
             vc.delegate = self
@@ -82,16 +100,16 @@ class YelpVC: UIViewController, CLLocationManagerDelegate, UITableViewDataSource
     }
     
     func presentEmptySearch() {
-        let label = UILabel(frame: CGRect(x: 50, y: 200, width: self.view.frame.width - 100, height: 80))
-        label.textAlignment = .center
-        label.font = UIFont(name: "Optima", size: 20)
-        label.textColor = UIColor.darkGray
+        label = UILabel(frame: CGRect(x: 50, y: 200, width: self.view.frame.width - 100, height: 80))
+        label?.textAlignment = .center
+        label?.font = UIFont(name: "Optima", size: 20)
+        label?.textColor = UIColor.darkGray
         if let trm = self.searchterm {
-            label.text = "No results here for \n\(trm)"
+            label?.text = "No results here for \n\(trm)"
         }
-        label.text = "No results here for \n\(String(describing: self.searchterm!))"
-        label.numberOfLines = 2
-        self.view.addSubview(label)
+        label?.text = "No results here for \n\(String(describing: self.searchTitle!))"
+        label?.numberOfLines = 2
+        self.view.addSubview(label!)
     }
     
     // Yelp Functions
@@ -135,7 +153,10 @@ class YelpVC: UIViewController, CLLocationManagerDelegate, UITableViewDataSource
     // LocationManager callbacks
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let lst = locations.last {
-            ylpCoord = YLPCoordinate(latitude: lst.coordinate.latitude, longitude: lst.coordinate.longitude)
+            if ylpCoord != YLPCoordinate(latitude: lst.coordinate.latitude, longitude: lst.coordinate.longitude) {
+                ylpCoord = YLPCoordinate(latitude: lst.coordinate.latitude, longitude: lst.coordinate.longitude)
+            }
+            
         }
         
     }
@@ -148,10 +169,16 @@ class YelpVC: UIViewController, CLLocationManagerDelegate, UITableViewDataSource
         switch status {
         case .authorizedWhenInUse:
             print("Authorized")
-            locationManager.startUpdatingLocation()
+            let time = DispatchTime.now() + 10
+            DispatchQueue.main.asyncAfter(deadline: time) {
+                if !self.isUpdatingLocation {
+                    self.locationManager.startUpdatingLocation()
+                }
+            }
         case .denied:
             showDeniedAlert()
             locationManager.stopUpdatingLocation()
+            isUpdatingLocation = false
         default:
             break
         }
@@ -196,8 +223,9 @@ class YelpVC: UIViewController, CLLocationManagerDelegate, UITableViewDataSource
     }
     
     // SearcherDelegate
-    func searchBy(searchTerm: String) {
+    func searchBy(searchTerm: String, termTitle: String) {
         self.searchterm = searchTerm
+        self.searchTitle = termTitle
         yelpSearch()
     }
 }

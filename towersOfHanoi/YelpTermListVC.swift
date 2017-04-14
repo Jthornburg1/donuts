@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol SearcherDelegate {
-    func searchBy(searchTerm: String)
+    func searchBy(searchTerm: String, termTitle: String)
 }
 
 class YelpTermListVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -93,7 +93,8 @@ class YelpTermListVC: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let searchString = (unwieldyButUsable[indexPath.section].values.first?[indexPath.row].alias)!
-        delegate?.searchBy(searchTerm: searchString)
+        let title = (unwieldyButUsable[indexPath.section].values.first?[indexPath.row].title)!
+        delegate?.searchBy(searchTerm: searchString, termTitle: title)
         navigationController?.popViewController(animated: true)
     }
     
