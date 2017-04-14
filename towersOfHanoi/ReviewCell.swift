@@ -16,6 +16,8 @@ class ReviewCell: UITableViewCell {
     @IBOutlet weak var placeImage: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
     
+    var constraintToStretchCell: NSLayoutConstraint?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

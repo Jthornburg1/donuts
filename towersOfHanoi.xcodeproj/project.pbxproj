@@ -28,6 +28,8 @@
 		D2BEBAFE1E6DF1940008A8C6 /* LocationerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BEBAFD1E6DF1940008A8C6 /* LocationerVC.swift */; };
 		D2BF69921EA1315D0072BD2F /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF69901EA1315D0072BD2F /* ReviewCell.swift */; };
 		D2BF69931EA1315D0072BD2F /* ReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2BF69911EA1315D0072BD2F /* ReviewCell.xib */; };
+		D2BF69951EA136D00072BD2F /* ResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF69941EA136D00072BD2F /* ResultsVC.swift */; };
+		D2BF69971EA138D10072BD2F /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BF69961EA138D10072BD2F /* Review.swift */; };
 		D2C41A781E9FC5AF008BD67A /* YelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C41A761E9FC5AF008BD67A /* YelpCell.swift */; };
 		D2C41A791E9FC5AF008BD67A /* YelpCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C41A771E9FC5AF008BD67A /* YelpCell.xib */; };
 		D2C9C2311E689F5B008B3D52 /* PanTester.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C9C2301E689F5B008B3D52 /* PanTester.swift */; };
@@ -90,6 +92,8 @@
 		D2BEBAFD1E6DF1940008A8C6 /* LocationerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationerVC.swift; sourceTree = "<group>"; };
 		D2BF69901EA1315D0072BD2F /* ReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
 		D2BF69911EA1315D0072BD2F /* ReviewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewCell.xib; sourceTree = "<group>"; };
+		D2BF69941EA136D00072BD2F /* ResultsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsVC.swift; sourceTree = "<group>"; };
+		D2BF69961EA138D10072BD2F /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		D2C41A761E9FC5AF008BD67A /* YelpCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpCell.swift; sourceTree = "<group>"; };
 		D2C41A771E9FC5AF008BD67A /* YelpCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YelpCell.xib; sourceTree = "<group>"; };
 		D2C9C2301E689F5B008B3D52 /* PanTester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PanTester.swift; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 				D2599D721E6E279B0039A23D /* City.swift */,
 				D2D9E96A1E97FB050037E48B /* OneStep.swift */,
 				D27AFBC11EA00C2300460485 /* YelpCategory.swift */,
+				D2BF69961EA138D10072BD2F /* Review.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				D2D9E96E1E97FCCA0037E48B /* StairsViewController.swift */,
 				D294D1FA1E9ED9F000508728 /* YelpVC.swift */,
 				D27AFBC31EA012D800460485 /* YelpTermListVC.swift */,
+				D2BF69941EA136D00072BD2F /* ResultsVC.swift */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -575,7 +581,9 @@
 				D2C41A781E9FC5AF008BD67A /* YelpCell.swift in Sources */,
 				D2B2A5351E70BB7B007ECF9D /* UIViewController+Extensions.swift in Sources */,
 				D2CEC4BD1E54E092002A79BB /* AppDelegate.swift in Sources */,
+				D2BF69971EA138D10072BD2F /* Review.swift in Sources */,
 				D2599D711E6E181C0039A23D /* State.swift in Sources */,
+				D2BF69951EA136D00072BD2F /* ResultsVC.swift in Sources */,
 				D2D9E96B1E97FB050037E48B /* OneStep.swift in Sources */,
 				D2CEC4EF1E54E614002A79BB /* CircleMaker.swift in Sources */,
 				D2C9C2311E689F5B008B3D52 /* PanTester.swift in Sources */,
