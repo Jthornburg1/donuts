@@ -38,4 +38,39 @@ extension UIImage {
         let tintableVersion = self.withRenderingMode(.alwaysTemplate)
         return tintableVersion
     }
+    
+    func cropTo(size: CGSize) -> UIImage {
+        guard let cgImage = self.cgImage else { return self }
+        
+        let contextImage: UIImage = UIImage(cgImage: cgImage)
+        
+        var cropWidth: CGFloat = size.width
+        var cropHeight: CGFloat = size.height
+        
+        if (self.size.height < size.height || self.size.width < size.width) {
+            return self
+        }
+        
+        let heightPercentage = self.size.height/size.height
+        let widthPercentage = self.size.width/size.width
+        
+        if (heightPercentage < widthPercentage) {
+            cropHeight = size.height * heightPercentage
+            cropWidth = size.width * heightPercentage
+        } else {
+            cropHeight = size.height * widthPercentage
+            cropWidth = size.width * widthPercentage
+        }
+        
+        let posX: CGFloat = (self.size.width - cropWidth) / 2
+        let posY: CGFloat = (self.size.height - cropHeight) / 2
+        
+        let rect: CGRect = CGRect(x: posX, y: posY, width: cropWidth, height: cropHeight)
+        
+        let imageRef: CGImage = contextImage.cgImage!.cropping(to: rect)!
+        
+        let cropped: UIImage = UIImage(cgImage: imageRef, scale: self.scale, orientation: self.imageOrientation)
+        
+        return cropped
+    }
 }
