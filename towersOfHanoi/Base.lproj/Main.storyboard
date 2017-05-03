@@ -56,6 +56,7 @@
                     <connections>
                         <outlet property="tableView" destination="uSF-kJ-29U" id="xsv-Mz-ALc"/>
                         <segue destination="QXv-HK-E2C" kind="show" identifier="SearchTermSegue" id="roq-AU-XAe"/>
+                        <segue destination="hDQ-jP-l5G" kind="show" identifier="ResultsSegue" id="ugV-Xo-x7D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8sS-LQ-4Bz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -94,6 +95,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eda-rT-GiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2713" y="-533"/>
+        </scene>
+        <!--ResultsVC-->
+        <scene sceneID="wNB-RG-BcU">
+            <objects>
+                <viewController id="hDQ-jP-l5G" customClass="ResultsVC" customModule="towersOfHanoi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qlN-b0-9mX"/>
+                        <viewControllerLayoutGuide type="bottom" id="1VE-Km-5qQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jiR-Gq-EPb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9gd-Zh-RHH">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9gd-Zh-RHH" firstAttribute="leading" secondItem="jiR-Gq-EPb" secondAttribute="leading" id="4xN-5p-h2N"/>
+                            <constraint firstAttribute="trailing" secondItem="9gd-Zh-RHH" secondAttribute="trailing" id="Vxh-Y0-RKh"/>
+                            <constraint firstItem="9gd-Zh-RHH" firstAttribute="top" secondItem="qlN-b0-9mX" secondAttribute="bottom" id="iqg-16-dDU"/>
+                            <constraint firstItem="1VE-Km-5qQ" firstAttribute="top" secondItem="9gd-Zh-RHH" secondAttribute="bottom" id="kut-2j-2VD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="9gd-Zh-RHH" id="mbF-tf-DxV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Biv-UU-zLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3453.5999999999999" y="-534.78260869565224"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -815,7 +849,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="t9L-re-SiV" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FRW-Qn-kj6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="FRW-Qn-kj6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -837,7 +871,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lzl-4m-9Q9" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EBB-Um-SXd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="EBB-Um-SXd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

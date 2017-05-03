@@ -17,9 +17,11 @@ extension UIImageView {
         let task = session.dataTask(with: urlRequest) { (data, response, error) in
             DispatchQueue.main.async(execute: { 
                 if let dta = data {
-                    self.image = UIImage(data: dta)
+                    let fuckedUpImage = UIImage(data: dta)
+                    self.image? = (fuckedUpImage?.crop(to: self.frame.size))!
                 } else {
-                    self.image = UIImage(named: "placeHolder")
+                    let fuckedUpImage = UIImage(named: "placeHolder")
+                    self.image = fuckedUpImage?.crop(to: self.frame.size)
                 }
             })
         }
@@ -39,38 +41,62 @@ extension UIImage {
         return tintableVersion
     }
     
-    func cropTo(size: CGSize) -> UIImage {
+
+    // Always wanted to be able to crop images...
+    func crop(to: CGSize) -> UIImage {
         guard let cgImage = self.cgImage else { return self }
         
         let contextImage: UIImage = UIImage(cgImage: cgImage)
         
-        var cropWidth: CGFloat = size.width
-        var cropHeight: CGFloat = size.height
+        let contextSize: CGSize = contextImage.size
         
-        if (self.size.height < size.height || self.size.width < size.width) {
-            return self
-        }
+        // Set to square
+        var posX: CGFloat = 0.0
+        var posY: CGFloat = 0.0
+        let cropAspect: CGFloat = to.width / to.height
         
-        let heightPercentage = self.size.height/size.height
-        let widthPercentage = self.size.width/size.width
+        var cropWidth: CGFloat = to.width
+        var cropHeight: CGFloat = to.height
         
-        if (heightPercentage < widthPercentage) {
-            cropHeight = size.height * heightPercentage
-            cropWidth = size.width * heightPercentage
+        if to.width > to.height { // Landscape
+            cropWidth = contextSize.width
+            cropHeight = contextSize.width * cropAspect
+            posY = (contextSize.width - cropHeight) / 2
+        } else if to.width < to.height { // Portrait
+            cropHeight = contextSize.height
+            cropWidth = contextSize.height * cropAspect
+            posX = (contextSize.width - cropWidth) / 2
         } else {
-            cropHeight = size.height * widthPercentage
-            cropWidth = size.width * widthPercentage
+            if contextSize.width >= contextSize.height { // Square on landscape (or square)
+                cropHeight = contextSize.height
+                cropWidth = contextSize.height * cropAspect
+                posX = (contextSize.width - cropWidth) / 2
+            } else {
+                cropWidth = contextSize.height
+                cropHeight = contextSize.width / cropAspect
+                posY = (contextSize.height - cropHeight) / 2
+            }
         }
-        
-        let posX: CGFloat = (self.size.width - cropWidth) / 2
-        let posY: CGFloat = (self.size.height - cropHeight) / 2
         
         let rect: CGRect = CGRect(x: posX, y: posY, width: cropWidth, height: cropHeight)
         
-        let imageRef: CGImage = contextImage.cgImage!.cropping(to: rect)!
+        // Create a bitmap image from context using the rect
+        let imageRef = cgImage.cropping(to: rect)
         
-        let cropped: UIImage = UIImage(cgImage: imageRef, scale: self.scale, orientation: self.imageOrientation)
+        let cropped: UIImage = UIImage(cgImage: imageRef!, scale: self.scale, orientation: self.imageOrientation)
         
-        return cropped
+        UIGraphicsBeginImageContextWithOptions(to, true, self.scale)
+        
+        cropped.draw(in: CGRect(x: 0, y: 0, width: to.width, height: to.height))
+        
+        if let resized = UIGraphicsGetImageFromCurrentImageContext() {
+            UIGraphicsEndImageContext()
+            
+            return resized
+            
+        } else {
+            
+            return self
+        }
     }
 }

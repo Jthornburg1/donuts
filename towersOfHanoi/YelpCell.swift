@@ -17,7 +17,7 @@ class YelpCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        placeImageView.contentMode = .scaleAspectFill
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -45,6 +45,9 @@ class YelpCell: UITableViewCell {
         nameLabel.text = yelpItem.name
         let addrString = yelpItem.location.address.joined(separator: " ")
         addressLabel.text = addrString
+        
+        placeImageView.layer.cornerRadius = 5
+        placeImageView.clipsToBounds = true
     }
     
 }
